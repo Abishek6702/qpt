@@ -54,7 +54,7 @@ const features = [
 export default function WhyChooseUs() {
   return (
     <section id="why" className="">
-      <div className="max-w-[80%] mx-auto px-6">
+      <div className="max-w-[90%] mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-[#1a1a1a] dark:text-[#e2e8f0]">
@@ -101,6 +101,7 @@ export default function WhyChooseUs() {
                   border
                   border-transparent
                   dark:border-white/5
+                  shadow-lg
                 `}
               >
                 {/* Soft glow */}

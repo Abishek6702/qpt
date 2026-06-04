@@ -1,13 +1,40 @@
+"use client";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+
 export default function About() {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-6 py-16">
-      <div className="space-y-6">
-        <p className="text-sm uppercase tracking-[0.3em] text-indigo-600 dark:text-indigo-400">Who We Are</p>
-        <h2 className="text-3xl sm:text-4xl font-semibold">Trusted partners for fast-growing businesses.</h2>
-        <p className="max-w-4xl text-slate-600 dark:text-slate-300">
-          We help companies turn ideas into polished digital experiences with services,
-          products, and expert support designed for modern teams.
-        </p>
+    <section id="about" className=" py-16 mt-4">
+      <div className="grid lg:grid-cols-2  items-center w-[90%] mx-auto">
+        {/* Image */}
+        <div className="relative h-full overflow-hidden ">
+          <Image
+            src="/about.png"
+            alt="About Us"
+            width={500}
+            height={500}
+            className="object-fit m-auto"
+            priority
+          />
+        </div>
+
+        {/* Content */}
+        <div className="text-left">
+          <h1 className="mt-10 max-w-3xl text-5xl font-bold leading-tight dark:text-[#e2e8f0]">
+            About 
+            <span className="text-blue-600"> Us</span>
+          </h1>
+
+          <p className="mt-4 max-w-2xl text-xl text-slate-400">
+            We craft intelligent software solutions that propel businesses into
+            the future. Experience the perfect blend of creativity, technology,
+            and strategy.We craft intelligent software solutions that propel businesses into
+            the future. Experience the perfect blend of creativity, technology,
+            and strategy.
+          </p>
+
+          
+        </div>
       </div>
     </section>
   );

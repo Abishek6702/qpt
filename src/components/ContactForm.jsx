@@ -25,7 +25,7 @@ export default function ContactForm() {
       "linear-gradient(224.13deg, #9AB9FF 0%, #C8DAFF 50.18%, #E2E8F0 98.53%)",
   }}
 />
-      <div className="relative z-10 px-6 w-[80%] mx-auto">
+      <div className="relative z-10 px-6 w-[90%] mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="mt-6 text-5xl font-bold text-[#1a1a1a] dark:text-[#e2e8f0]">

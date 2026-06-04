@@ -1,24 +1,150 @@
+"use client";
+
+import { TypeAnimation } from "react-type-animation";
+import {
+  Smartphone,
+  Globe,
+  Cloud,
+  Code2,
+  Workflow,
+  Shield,
+  ArrowRight,
+} from "lucide-react";
+
 export default function Services() {
+  const services = [
+    {
+      title: "UI/UX Design",
+      description:
+        "Intuitive and engaging user interfaces designed to enhance user experience and drive engagement.",
+      icon: Smartphone,
+      color: "from-sky-500 to-cyan-500",
+    },
+    {
+      title: "Web Development",
+      description:
+        "Responsive, fast, and scalable web applications built with modern frameworks and technologies.",
+      icon: Globe,
+      color: "from-purple-500 to-pink-500",
+    },
+    {
+      title: "Cloud Solutions",
+      description:
+        "Scalable cloud infrastructure and migration services for AWS, Azure, and Google Cloud Platform.",
+      icon: Cloud,
+      color: "from-orange-500 to-red-500",
+    },
+    {
+      title: "Software Development",
+      description:
+        "Custom software solutions tailored to business workflows, automation, and enterprise growth.",
+      icon: Code2,
+      color: "from-green-500 to-emerald-500",
+    },
+    {
+      title: "DevOps & Automation",
+      description:
+        "CI/CD pipelines, Docker, Kubernetes, monitoring, and automated deployment workflows.",
+      icon: Workflow,
+      color: "from-indigo-500 to-blue-500",
+    },
+    {
+      title: "Cybersecurity",
+      description:
+        "Comprehensive security solutions to protect applications, infrastructure, and sensitive data.",
+      icon: Shield,
+      color: "from-pink-500 to-rose-500",
+    },
+  ];
+
   return (
-    <section id="services" className="max-w-7xl mx-auto px-6 py-16">
-      <div className="space-y-6">
-        <p className="text-sm uppercase tracking-[0.3em] text-indigo-600 dark:text-indigo-400">Our Services</p>
-        <h2 className="text-3xl sm:text-4xl font-semibold">Services built for every stage of your business.</h2>
+    <section
+      id="services"
+      className="max-w-7xl mx-auto px-6 py-24"
+    >
+      {/* Heading */}
+      <div className="text-center mb-16">
+        <h2 className="text-5xl font-bold text-slate-900 dark:text-white">
+          Our{" "}
+          <span className="text-blue-600 dark:text-blue-400">
+            <TypeAnimation
+              sequence={[
+                "Services",
+                2000,
+                "Solutions",
+                2000,
+                "Expertise",
+                2000,
+              ]}
+              speed={50}
+              repeat={Infinity}
+            />
+          </span>
+        </h2>
+
+        <p className="mt-5 max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-400">
+          We deliver innovative technology solutions that help
+          businesses grow, scale, and succeed in the digital era.
+        </p>
       </div>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
-        <article className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-8 shadow-sm">
-          <h3 className="text-xl font-semibold">Design & Branding</h3>
-          <p className="mt-4 text-slate-600 dark:text-slate-300">Modern visual systems, UX design, and brand identity that stands out.</p>
-        </article>
-        <article className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-8 shadow-sm">
-          <h3 className="text-xl font-semibold">Web & Mobile Apps</h3>
-          <p className="mt-4 text-slate-600 dark:text-slate-300">High-performance applications optimized for growth and conversion.</p>
-        </article>
-        <article className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-8 shadow-sm">
-          <h3 className="text-xl font-semibold">Strategy & Growth</h3>
-          <p className="mt-4 text-slate-600 dark:text-slate-300">Product planning, analytics, and growth guidance to scale reliably.</p>
-        </article>
+      {/* Cards */}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {services.map((service) => {
+          const Icon = service.icon;
+
+          return (
+            <div
+              key={service.title}
+              className="
+                group
+                h-full
+                rounded-2xl
+                border
+                border-slate-200
+                dark:border-slate-800
+                bg-white
+                dark:bg-slate-900
+                p-6
+                transition-all
+                duration-300
+                hover:-translate-y-2
+                hover:shadow-xl
+                dark:hover:border-slate-700
+                shadow-lg
+              "
+            >
+              {/* Icon */}
+              <div
+                className={`
+                  w-12 h-12
+                  rounded-xl
+                  bg-gradient-to-br
+                  ${service.color}
+                  flex items-center justify-center
+                  shadow-lg
+                `}
+              >
+                <Icon
+                  size={26}
+                  className="text-white"
+                />
+              </div>
+
+              {/* Title */}
+              <h3 className="mt-4 text-xl font-bold text-slate-900 dark:text-white">
+                {service.title}
+              </h3>
+
+              {/* Description */}
+              <p className="mt-2  text-slate-600 dark:text-slate-400 ">
+                {service.description}
+              </p>
+
+              
+            </div>
+          );
+        })}
       </div>
     </section>
   );

@@ -6,8 +6,8 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] dark:bg-[#0a0e1a]  rounded-b-[48px]">
-      <div className="max-w-7xl mx-auto px-6 py-20">
+    <section className="relative overflow-hidden bg-[#fafafa] dark:bg-[#0a0e1a]">
+      <div className="max-w-7xl mx-auto px-6 pt-20">
         <div className="grid items-start gap-12 lg:grid-cols-2">
           {/* Left Content */}
           <div className="text-left">
@@ -58,7 +58,6 @@ export default function Hero() {
                 width={400}
                 height={400}
                 className="w-[400px] h-auto"
-                priority
               />
             </div>
           </div>

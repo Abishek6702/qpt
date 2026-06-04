@@ -30,7 +30,7 @@ function AccordionItem({ item, isOpen, onToggle }) {
   }, [isOpen]);
 
   return (
-    <div className="rounded-xl border border-slate-200 dark:border-slate-800  dark:bg-[#121828] py-5 px-5 cursor-pointer hover:border-[#2563EB]/50 dark:hover:border-[#3B82F6]/50 transition-colors duration-300">
+    <div className="rounded-xl border shadow-xs border-slate-100 dark:border-slate-800  dark:bg-[#121828] py-5 px-5 cursor-pointer  dark:hover:border-[#3B82F6]/50 transition-colors duration-300">
       <button
         onClick={onToggle}
         className="flex w-full items-center justify-between gap-4 text-left"
@@ -80,7 +80,7 @@ export default function Faq() {
       id="faq"
       className="border-t border-slate-200 dark:border-slate-800"
     >
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="w-[90%] mx-auto px-6 py-16">
         <div className="text-center mb-8">
           <h2 className="mt-6 text-5xl font-bold text-[#1a1a1a] dark:text-[#e2e8f0]">
             Frequently Asked{" "}
