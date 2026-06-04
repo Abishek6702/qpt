@@ -52,7 +52,7 @@ export default function Hero() {
             <div className="absolute inset-0 opacity-40" />
 
             <div className="relative z-10 w-full flex justify-end pr-0">
-              <Image
+              <img
                 src="/hero.svg"
                 alt="Hero Illustration"
                 width={400}
