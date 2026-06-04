@@ -15,12 +15,25 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
-    setTheme(savedTheme);
+    const savedTheme = localStorage.getItem("theme");
+  
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+      setTheme("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      setTheme("light");
+    }
   }, []);
-
+  
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
+    console.log("Theme:", theme);
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    
     localStorage.setItem("theme", theme);
   }, [theme]);
 
@@ -53,7 +66,9 @@ export default function Navbar() {
         {/* Right Actions */}
         <div className="flex items-center gap-3">
           <button
-            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          onClick={() =>
+            setTheme((prev) => (prev === "light" ? "dark" : "light"))
+          }
             className="rounded-full p-2 cursor-pointer bg-[#ffffff] text-slate-700  dark:bg-slate-800 dark:text-slate-100
   "
           >
