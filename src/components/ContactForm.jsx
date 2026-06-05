@@ -50,7 +50,7 @@ export default function ContactForm() {
 
         <div className="flex items-center gap-4 h-full">
           {/* Left Side */}
-          <div className=" w-[40%] h-full">
+          <div className=" md:w-[40%] h-full hidden lg:block">
             <div className="relative overflow-hidden z-100 h-[65vh] w-full bg-[#011c2b] dark:bg-slate-900 rounded-xl p-6 flex flex-col justify-between">
               <div className="headeing">
                 <h1 className="lato  text-2xl text-[#fafafa] font-bold  dark:text-[#e2e8f0]">
@@ -128,7 +128,7 @@ export default function ContactForm() {
           </div>
 
           {/* Right Side Form */}
-          <form className="rounded-xl w-[60%] bg-[#ffffff] dark:bg-[#111827] p-6 shadow-md">
+          <form className="rounded-xl md:w-[60%]  bg-[#ffffff] dark:bg-[#111827] p-6 shadow-md">
             <div className="grid gap-4 md:grid-cols-2">
               <div>
                 <label className="mb-2 block font-medium text-[#1a1a1a] dark:text-[#e2e8f0]">
