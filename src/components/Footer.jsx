@@ -2,7 +2,7 @@ import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-300 dark:border-gray-800 dark:bg-[#222d40] bg-[#f5f6f8] ">
+    <footer className="border-t border-gray-300 dark:border-gray-800 dark:bg-[#222d40] bg-[#ffffff] ">
       <div className="max-w-7xl mx-auto px-6 py-6 text-sm text-slate-600 dark:text-slate-400">
         <div className="flex items-center justify-between">
          

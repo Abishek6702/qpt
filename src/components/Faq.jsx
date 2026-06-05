@@ -30,18 +30,17 @@ function AccordionItem({ item, isOpen, onToggle }) {
   }, [isOpen]);
 
   return (
-    <div className="rounded-xl border shadow-xs border-slate-100 dark:border-slate-800  dark:bg-[#121828] py-5 px-5 cursor-pointer  dark:hover:border-[#3B82F6]/50 transition-colors duration-300">
+    <div className="rounded-xl border shadow-xs border-slate-200 bg-[#ffffff] dark:border-slate-800  dark:bg-[#121828] py-5 px-5 cursor-pointer  dark:hover:border-[#3B82F6]/50 transition-colors duration-300">
       <button
         onClick={onToggle}
         className="flex w-full items-center justify-between gap-4 text-left"
       >
         <span
-          className="
-      text-xl 
-      font-semibold
-      text-[#1a1a1a]
-      dark:text-[#e2e8f0]
-    "
+          className={`text-xl font-semibold lato transition-colors duration-300 ${
+            isOpen
+              ? "text-[#2563EB] dark:text-[#3B82F6]"
+              : "text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75"
+          }`}
         >
           {item.q}
         </span>
@@ -53,7 +52,7 @@ function AccordionItem({ item, isOpen, onToggle }) {
       ${
         isOpen
           ? "bg-[#2563EB] text-white rotate-180"
-          : "bg-[#F3F4F6] dark:bg-[#222c3e] dark:text-[#fafafa] text-[#1a1a1a]"
+          : "bg-[#F3F4F6] dark:bg-[#222c3e] text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75"
       }
     `}
         >
@@ -82,7 +81,7 @@ export default function Faq() {
     >
       <div className="w-[90%] mx-auto px-6 py-16">
         <div className="text-center mb-8">
-          <h2 className="mt-6 text-5xl font-bold text-[#1a1a1a] dark:text-[#e2e8f0]">
+          <h2 className="lato  text-[42px] text-[#1a1a1a] font-bold  dark:text-[#e2e8f0]">
             Frequently Asked{" "}
             <span className="text-[#2563EB] dark:text-[#3B82F6]">
               <TypeAnimation
@@ -94,7 +93,7 @@ export default function Faq() {
             </span>
           </h2>
 
-          <p className="mt-4 text-lg text-slate-500 dark:text-slate-400">
+          <p className="text-[18px] font-normal text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75">
             Ready to transform your ideas into reality? Get in touch with our
             team today
           </p>
