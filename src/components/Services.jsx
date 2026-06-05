@@ -58,9 +58,9 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="max-w-7xl mx-auto px-6 py-24">
+    <section id="services" className="max-w-7xl mx-auto px-6 py-14">
       {/* Heading */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-6">
         <h2 className="lato  text-[42px] text-[#1a1a1a] font-bold  dark:text-[#e2e8f0]">
           Our{" "}
           <span className="text-[#2563EB] dark:text-[#3b82f6]">

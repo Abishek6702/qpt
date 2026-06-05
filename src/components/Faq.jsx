@@ -77,9 +77,9 @@ export default function Faq() {
   return (
     <section
       id="faq"
-      className="border-t border-slate-200 dark:border-slate-800"
+      className="border-t border-slate-200 dark:border-slate-800 "
     >
-      <div className="w-[90%] mx-auto px-6 py-16">
+      <div className="w-[90%] mx-auto px-6 py-6">
         <div className="text-center mb-8">
           <h2 className="lato  text-[42px] text-[#1a1a1a] font-bold  dark:text-[#e2e8f0]">
             Frequently Asked{" "}

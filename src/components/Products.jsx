@@ -8,7 +8,7 @@ const products = [
     title: "Admission Portal",
     description:
       "See your MRR and active users in one clean, unified view — no more switching tabs.",
-    image: "/adm.svg",
+    image: "/admission.svg",
   },
   {
     title: "Events Explorer",
@@ -29,17 +29,17 @@ const products = [
     image: "/hrms.svg",
   },
   {
-    title:"Finance Portal",
+    title: "Finance Portal",
     description:
       "Streamline your financial processes and gain valuable insights with our comprehensive finance portal.",
     image: "/finance.svg",
   },
   {
-    title:"Learning Management System",
+    title: "Learning Management System",
     description:
       "Empower your organization with our intuitive learning management system.",
     image: "/lms.svg",
-  }
+  },
 ];
 export default function Products() {
   return (
@@ -47,8 +47,8 @@ export default function Products() {
       id="products"
       className="border-t border-slate-200 dark:border-slate-800"
     >
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="text-center mb-16">
+      <div className="max-w-7xl mx-auto px-6 py-6">
+        <div className="text-center mb-6">
           <h2 className="lato  text-[42px] text-[#1a1a1a] font-bold  dark:text-[#e2e8f0]">
             Our{" "}
             <span className="text-[#2563EB] dark:text-[#3b82f6]">
@@ -93,24 +93,24 @@ export default function Products() {
                     alt={product.title}
                     // fill
                     height={100}
-                    className="object-cover w-full h-full"
+                    className="object-cover w-full h-full rounded-xl"
                     width={100}
                   />
                 </div>
               </div>
 
               {/* Content */}
-              <div className="px-4 pb-4 flex items-center justify-between">
+              <div className="px-4 pb-4 flex flex-col  justify-between">
                 <div className="">
                   <h3 className="text-xl lato font-bold tracking-tight text-[#1a1a1a] dark:text-[#e2e8f0] leading-[1.2]">
                     {product.title}
                   </h3>
 
-                  <p className=" text-gray-500 mt-2 w-[90%] dark:text-[#e2e8f0]/75 ">
+                  <p className=" text-gray-500 mt-2  dark:text-[#e2e8f0]/75 ">
                     {product.description}
                   </p>
                 </div>
-                <button className="rounded-lg bg-[#2563EB] cursor-pointer px-4 py-2 text-white font-medium shadow-lg hover:bg-[#2557d9] transition flex items-center gap-2">
+                <button className="rounded-lg w-fit mt-2 bg-[#2563EB] cursor-pointer px-4 py-2 text-white font-medium shadow-lg hover:bg-[#2557d9] transition flex items-center gap-2">
                   Explore <ArrowUpRight className="w-5 h-5" />
                 </button>
               </div>

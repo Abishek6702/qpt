@@ -1,13 +1,14 @@
 "use client";
-import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send, PhoneCall } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 
 export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden dark:bg-[#0a0e1a] py-10 z-50"
+      className="relative overflow-hidden dark:bg-[#0a0e1a] pb-10 "
     >
       <div
         className="
@@ -29,11 +30,11 @@ export default function ContactForm() {
       <div className="relative z-10 px-6 w-[90%] mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="mt-6 text-5xl font-bold text-[#1a1a1a] dark:text-[#e2e8f0]">
-            Let's Start Your{" "}
+          <h2 className="mt-6 lato  text-[42px] text-[#1a1a1a] font-bold  dark:text-[#e2e8f0]">
+              Get in{" "}
             <span className="text-[#2563EB] dark:text-[#3B82F6]">
               <TypeAnimation
-                sequence={["Project", 2000, "", 500]}
+                sequence={["Touch", 2000, "", 500]}
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
@@ -41,7 +42,7 @@ export default function ContactForm() {
             </span>
           </h2>
 
-          <p className="mt-4 text-lg text-slate-500 dark:text-slate-400">
+          <p className="text-[18px] font-normal text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75">
             Ready to transform your ideas into reality? Get in touch with our
             team today
           </p>
@@ -50,7 +51,7 @@ export default function ContactForm() {
         <div className="flex items-center gap-4 h-full">
           {/* Left Side */}
           <div className=" w-[40%] h-full">
-            <div className="relative z-100 h-[65vh] w-full bg-[#011c2b] rounded-xl p-6 flex flex-col justify-between">
+            <div className="relative overflow-hidden z-100 h-[65vh] w-full bg-[#011c2b] dark:bg-[#222d40] rounded-xl p-6 flex flex-col justify-between">
               <div className="headeing">
                 <h1 className="lato  text-2xl text-[#fafafa] font-bold  dark:text-[#e2e8f0]">
                   Contact Information
@@ -60,7 +61,36 @@ export default function ContactForm() {
                 </p>
               </div>
               <div className="">
+                <div className="space-y-4 relative z-10 mb-14">
+                  {/* Phone */}
+                  <div className="flex items-center gap-4">
+                    <div className="text-white">
+                      <FaPhoneAlt size={22} />
+                    </div>
 
+                    <p className="text-white ">+1 (555) 123-4567</p>
+                  </div>
+
+                  {/* Email */}
+                  <div className="flex items-center gap-4">
+                    <div className="text-white">
+                      <IoMdMail size={22} />
+                    </div>
+
+                    <p className="text-white ">hello@softwareco.com</p>
+                  </div>
+
+                  {/* Address */}
+                  <div className="flex items-start gap-4">
+                    <div className="text-white mt-1">
+                      <FaMapMarkerAlt size={22} />
+                    </div>
+
+                    <p className="text-white leading-relaxed w">
+                      123 Tech Street, San Francisco, CA 94105, United States
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div className="social">
@@ -91,8 +121,8 @@ export default function ContactForm() {
                   </a>
                 </div>
               </div>
-              <div className="shape absolute bottom-[-150px] right-[-100px]">
-                <img src="/shape.svg" alt="" />
+              <div className="absolute -bottom-34 -right-24 z-0 pointer-events-none">
+                <img src="/shape.svg" alt="" className="w-[320px] h-[320px]" />
               </div>
             </div>
           </div>
