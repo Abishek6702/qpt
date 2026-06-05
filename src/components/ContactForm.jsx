@@ -51,7 +51,7 @@ export default function ContactForm() {
         <div className="flex items-center gap-4 h-full">
           {/* Left Side */}
           <div className=" w-[40%] h-full">
-            <div className="relative overflow-hidden z-100 h-[65vh] w-full bg-[#011c2b] dark:bg-[#222d40] rounded-xl p-6 flex flex-col justify-between">
+            <div className="relative overflow-hidden z-100 h-[65vh] w-full bg-[#011c2b] dark:bg-slate-900 rounded-xl p-6 flex flex-col justify-between">
               <div className="headeing">
                 <h1 className="lato  text-2xl text-[#fafafa] font-bold  dark:text-[#e2e8f0]">
                   Contact Information

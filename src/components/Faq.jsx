@@ -77,7 +77,7 @@ export default function Faq() {
   return (
     <section
       id="faq"
-      className="border-t border-slate-200 dark:border-slate-800 "
+      className=" "
     >
       <div className="w-[90%] mx-auto px-6 py-6">
         <div className="text-center mb-8">

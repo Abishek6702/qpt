@@ -45,10 +45,10 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="border-t border-slate-200 dark:border-slate-800"
+      className=""
     >
       <div className="max-w-7xl mx-auto px-6 py-6">
-        <div className="text-center mb-6">
+        <div className="text-center mb-10">
           <h2 className="lato  text-[42px] text-[#1a1a1a] font-bold  dark:text-[#e2e8f0]">
             Our{" "}
             <span className="text-[#2563EB] dark:text-[#3b82f6]">
