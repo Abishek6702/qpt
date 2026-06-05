@@ -20,10 +20,10 @@ export default function ContactForm() {
     opacity-90
     dark:hidden
   "
-  style={{
-    background:
-      "linear-gradient(224.13deg, #9AB9FF 0%, #C8DAFF 50.18%, #E2E8F0 98.53%)",
-  }}
+  // style={{
+  //   background:
+  //     "linear-gradient(224.13deg, #9AB9FF 0%, #C8DAFF 50.18%, #E2E8F0 98.53%)",
+  // }}
 />
       <div className="relative z-10 px-6 w-[90%] mx-auto">
         {/* Header */}

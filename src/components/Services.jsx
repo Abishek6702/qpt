@@ -58,15 +58,12 @@ export default function Services() {
   ];
 
   return (
-    <section
-      id="services"
-      className="max-w-7xl mx-auto px-6 py-24"
-    >
+    <section id="services" className="max-w-7xl mx-auto px-6 py-24">
       {/* Heading */}
       <div className="text-center mb-16">
-        <h2 className="text-5xl font-bold text-slate-900 dark:text-white">
+        <h2 className="lato  text-[42px] text-[#1a1a1a] font-bold  dark:text-[#e2e8f0]">
           Our{" "}
-          <span className="text-blue-600 dark:text-blue-400">
+          <span className="text-[#2563EB] dark:text-[#3b82f6]">
             <TypeAnimation
               sequence={[
                 "Services",
@@ -82,9 +79,9 @@ export default function Services() {
           </span>
         </h2>
 
-        <p className="mt-5 max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-400">
-          We deliver innovative technology solutions that help
-          businesses grow, scale, and succeed in the digital era.
+        <p className="text-[18px] font-normal text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75">
+          We deliver innovative technology solutions that help businesses grow,
+          scale, and succeed in the digital era.
         </p>
       </div>
 
@@ -125,10 +122,7 @@ export default function Services() {
                   shadow-lg
                 `}
               >
-                <Icon
-                  size={26}
-                  className="text-white"
-                />
+                <Icon size={26} className="text-white" />
               </div>
 
               {/* Title */}
@@ -140,8 +134,6 @@ export default function Services() {
               <p className="mt-2  text-slate-600 dark:text-slate-400 ">
                 {service.description}
               </p>
-
-              
             </div>
           );
         })}

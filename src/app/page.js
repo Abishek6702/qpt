@@ -8,19 +8,21 @@ import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import LogoCursor from "@/components/LogoCursor";
 
 export default function Home() {
   return (
     <>
       <Navbar />
 
-      <main className="bg-[#ffffff] dark:bg-[#0a0e1a] text-slate-900 dark:text-slate-100 transition-colors duration-300">
+      <main className="bg-[#f6f6f6] dark:bg-[#0a0e1a] text-slate-900 dark:text-slate-100 transition-colors duration-300">
         <Hero />
+        <LogoCursor />
         <About />
         <WhyChooseUs />
         <Services />
-        {/* <Products /> */}
-        {/* <Testimonials /> */}
+        <Products />
+        <Testimonials />
         <Faq />
         <ContactForm />
       </main>

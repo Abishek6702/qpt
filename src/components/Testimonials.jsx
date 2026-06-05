@@ -1,136 +1,172 @@
 "use client";
 
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { Star } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
 import "swiper/css";
-import "swiper/css/pagination";
 
 const testimonials = [
   {
-    name: "John Smith",
-    role: "CEO",
-    image: "/testimonials/user1.jpg",
-    review:
-      "The team delivered exactly what we needed. Professional, responsive, and highly skilled. They transformed our ideas into a modern and scalable platform.",
+    quote:
+      "They transformed our infrastructure. 40% cost reduction double the throughput.",
+    name: "Sarah Chen",
+    role: "CTO",
+    company: "Nexus Labs",
+    initials: "SC",
   },
   {
-    name: "Sarah Johnson",
-    role: "Product Manager",
-    image: "/testimonials/user2.jpg",
-    review:
-      "Excellent communication and outstanding technical expertise throughout the project. The final product exceeded all expectations.",
+    quote:
+      "Best technical partner we've worked with. Delivery is always included on point.",
+    name: "Marcus Rivera",
+    role: "VP Engineering",
+    company: "Orbit",
+    initials: "MR",
   },
   {
-    name: "Michael Brown",
+    quote:
+      "Concept to production in 6 weeks. Their  craftsmanship is primarly unmatched.",
+    name: "Priya Patel",
     role: "Founder",
-    image: "/testimonials/user3.jpg",
-    review:
-      "Working with this team was an amazing experience. Their development process was smooth and highly professional.",
+    company: "Quantum AI",
+    initials: "PP",
+  },
+  {
+    quote:
+      "Outstanding communication and technical excellence from start to finish.",
+    name: "David Lee",
+    role: "CEO",
+    company: "FutureTech",
+    initials: "DL",
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section
-      id="testimonials"
-      className="dark:bg-[#050505] overflow-hidden border"
-    >
-       <div className="text-center mb-4">
-          <h2 className="mt-6 text-5xl font-bold text-[#1a1a1a] dark:text-[#e2e8f0]">
-            Client{" "}<span className="text-[#2563EB] dark:text-[#3B82F6]">
+    <section id="testimonials" className=" pb-10 overflow-hidden ">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Heading */}
+        <div className="text-center mb-8">
+          <h2 className="lato  text-[42px] text-[#1a1a1a] font-bold  dark:text-[#e2e8f0]">
+            Client{" "}
+            <span className="text-[#2563EB] dark:text-[#3b82f6]">
               <TypeAnimation
-                sequence={["Testimonial", 2000, "", 500]}
-                wrapper="span"
+                sequence={[
+                  "Testimonials",
+                  2000,
+                  "Feedback",
+                  2000,
+                  "Opinions",
+                  2000,
+                ]}
                 speed={50}
                 repeat={Infinity}
               />
             </span>
           </h2>
 
-          <p className="mt-4 text-lg text-slate-500 dark:text-slate-400">
-            Ready to transform your ideas into reality? Get in touch with our
-            team today
+          <p className="text-[18px] font-normal text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75">
+            We deliver innovative technology solutions that help businesses
+            grow, scale, and succeed in the digital era.
           </p>
         </div>
 
-        {/* Slider */}
-        <div className="">
-          <Swiper
-            modules={[Autoplay, Pagination]}
-            slidesPerView={1.1}
-            centeredSlides
-            loop
-            spaceBetween={30}
-            autoplay={{
-              delay: 3500,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            breakpoints={{
-              768: {
-                slidesPerView: 1.5,
-              },
-              1024: {
-                slidesPerView: 2.2,
-              },
-            }}
-            className="testimonial-swiper "
-          >
-            {testimonials.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div
-                  className="
-                    bg-white
-                    dark:bg-slate-900
-                    rounded-[20px]
-                    p-10
-                    md:p-14
-                    min-h-[500px]
+        {/* Carousel */}
+        <Swiper
+  modules={[Autoplay, Pagination]}
+  loop
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+  }}
+  pagination={{
+    clickable: true,
+  }}
+  spaceBetween={30}
+  breakpoints={{
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  }}
+>
+          {testimonials.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className="
+                    bg-[#fafafa]
+                    dark:bg-[#0a0e1a]
+                    rounded-2xl
+                    border
+                    border-[#e7e2dc]
+                    dark:border-gray-800
+                    p-6
+                    
                     flex
                     flex-col
-                    items-center
-                    justify-center
-                    text-center
-                    border border-gray-300
                   "
-                >
-                  <h3 className="text-4xl font-bold text-black dark:text-white">
-                    {item.name}
-                  </h3>
-
-                  <p className="mt-2 text-cyan-500 text-xl">
-                    {item.role}
-                  </p>
-
-                  {/* Stars */}
-                  <div className="flex gap-1 mt-6">
+              >
+                <div className="flex items-center justify-between">
+                  <img
+                    src="/lightq.svg"
+                    alt="quote"
+                    className="w-8 h-8 text-gray-300 dark:text-gray-700 dark:hidden"
+                  />
+                  <img
+                    src="/darkq.svg"
+                    alt="quote"
+                    className="w-8 h-8 text-gray-300 dark:text-gray-700 hidden dark:block"
+                  />
+                  <div className="flex gap-1">
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        size={20}
-                        fill="#facc15"
-                        stroke="#facc15"
+                        size={18}
+                        className="fill-blue-500 text-blue-500"
                       />
                     ))}
                   </div>
-
-                  {/* Review */}
-                  <p className="mt-8 text-lg md:text-xl leading-9 text-slate-600 dark:text-slate-300 max-w-3xl">
-                    {item.review}
-                  </p>
-
-                  
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+                {/* Stars */}
+
+                {/* Quote */}
+                <p className="mt-2 py-4 text-xl text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75 lato flex-1">
+                  "{item.quote}"
+                </p>
+
+                {/* Divider */}
+                <div className="border-t border-gray-200 dark:border-gray-800 pt-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-semibold">
+                      {item.initials}
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75">
+                        {item.name}
+                      </h4>
+
+                      <p className="text-[#1a1a1a]/50 dark:text-[#e2e8f0]/75 text-sm">
+                        {item.role} · {item.company}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 }

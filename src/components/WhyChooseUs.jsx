@@ -57,7 +57,7 @@ export default function WhyChooseUs() {
       <div className="max-w-[90%] mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-[#1a1a1a] dark:text-[#e2e8f0]">
+          <h2 className="lato  text-[42px] text-[#1a1a1a] font-bold  dark:text-[#e2e8f0]">
             Why Choose Our{" "}
             <span className="text-[#2563EB]">
               <TypeAnimation
@@ -77,7 +77,7 @@ export default function WhyChooseUs() {
             </span>
           </h2>
 
-          <p className="mt-4 text-lg text-slate-500">
+          <p className="text-[18px] font-normal text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75">
             Everything you need to build, launch and scale successfully.
           </p>
         </div>
