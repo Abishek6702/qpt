@@ -1,15 +1,16 @@
-'use client';
+"use client";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
+import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden dark:bg-[#0a0e1a] py-10"
+      className="relative overflow-hidden dark:bg-[#0a0e1a] py-10 z-50"
     >
-    <div
-  className="
+      <div
+        className="
     absolute
     top-34
     left-0
@@ -20,16 +21,17 @@ export default function ContactForm() {
     opacity-90
     dark:hidden
   "
-  // style={{
-  //   background:
-  //     "linear-gradient(224.13deg, #9AB9FF 0%, #C8DAFF 50.18%, #E2E8F0 98.53%)",
-  // }}
-/>
+        // style={{
+        //   background:
+        //     "linear-gradient(224.13deg, #9AB9FF 0%, #C8DAFF 50.18%, #E2E8F0 98.53%)",
+        // }}
+      />
       <div className="relative z-10 px-6 w-[90%] mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="mt-6 text-5xl font-bold text-[#1a1a1a] dark:text-[#e2e8f0]">
-            Let's Start Your{" "}<span className="text-[#2563EB] dark:text-[#3B82F6]">
+            Let's Start Your{" "}
+            <span className="text-[#2563EB] dark:text-[#3B82F6]">
               <TypeAnimation
                 sequence={["Project", 2000, "", 500]}
                 wrapper="span"
@@ -45,59 +47,58 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1fr_2fr]">
+        <div className="flex items-center gap-4 h-full">
           {/* Left Side */}
-          <div className="space-y-4">
-            <div className="rounded-xl bg-white dark:bg-[#111827] p-4 shadow-sm">
-              <div className="space-y-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-sky-500 text-white">
-                  <Mail size={26} />
-                </div>
+          <div className=" w-[40%] h-full">
+            <div className="relative z-100 h-[65vh] w-full bg-[#011c2b] rounded-xl p-6 flex flex-col justify-between">
+              <div className="headeing">
+                <h1 className="lato  text-2xl text-[#fafafa] font-bold  dark:text-[#e2e8f0]">
+                  Contact Information
+                </h1>
+                <p className=" font-normal text-[#fafafa]/80 dark:text-[#e2e8f0]/75">
+                  Say something to start live chat!
+                </p>
+              </div>
+              <div className="">
 
-                <div>
-                  <h3 className="font-semibold text-[#1a1a1a] dark:text-[#e2e8f0]">
-                    Email
-                  </h3>
-                  <p className="text-slate-500">hello@softwareco.com</p>
+              </div>
+
+              <div className="social">
+                <div className="flex items-center gap-4">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white dark:text-gray-400 "
+                  >
+                    <FaFacebook size={20} />
+                  </a>
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white dark:text-gray-400  "
+                  >
+                    <FaTwitter size={20} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white dark:text-gray-400 "
+                  >
+                    <FaLinkedin size={20} />
+                  </a>
                 </div>
               </div>
-            </div>
-
-            <div className="rounded-xl bg-white dark:bg-[#111827] p-4 shadow-sm">
-              <div className="space-y-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-pink-500 text-white">
-                  <Phone size={26} />
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-[#1a1a1a] dark:text-[#e2e8f0]">
-                    Phone
-                  </h3>
-                  <p className="text-slate-500">+1 (555) 123-4567</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-xl bg-white dark:bg-[#111827] p-4 shadow-sm">
-              <div className="space-y-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500 text-white">
-                  <MapPin size={26} />
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-[#1a1a1a] dark:text-[#e2e8f0]">
-                    Office
-                  </h3>
-                  <p className="text-slate-500">
-                    123 Tech Street, San Francisco, CA
-                  </p>
-                </div>
+              <div className="shape absolute bottom-[-150px] right-[-100px]">
+                <img src="/shape.svg" alt="" />
               </div>
             </div>
           </div>
 
           {/* Right Side Form */}
-          <form className="rounded-xl bg-[#ffffff] dark:bg-[#111827] p-6 shadow-md">
+          <form className="rounded-xl w-[60%] bg-[#ffffff] dark:bg-[#111827] p-6 shadow-md">
             <div className="grid gap-4 md:grid-cols-2">
               <div>
                 <label className="mb-2 block font-medium text-[#1a1a1a] dark:text-[#e2e8f0]">

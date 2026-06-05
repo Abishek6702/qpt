@@ -104,7 +104,7 @@ export default function Testimonials() {
             <SwiperSlide key={index}>
               <div
                 className="
-                    bg-[#fafafa]
+                    bg-[#ffffff]
                     dark:bg-[#0a0e1a]
                     rounded-2xl
                     border
