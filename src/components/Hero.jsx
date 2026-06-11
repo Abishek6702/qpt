@@ -123,13 +123,13 @@ export default function Hero() {
           </p>
 
           {/* CTA */}
-          <div className="mt-8 flex gap-6 justify-center items-center">
-            <button className="rounded-lg bg-[#2563EB] cursor-pointer px-4 py-2 text-white font-medium shadow-lg hover:bg-[#2557d9] transition flex items-center gap-2">
+          <div className="mt-8 flex flex-col md:flex-row gap-6 justify-center items-center">
+            <a href="#contact" className="rounded-lg bg-[#2563EB] cursor-pointer px-4 py-2 text-white font-medium shadow-lg hover:bg-[#2557d9] transition flex items-center gap-2">
               Start Your Project <ArrowRight className="w-5 h-5" />
-            </button>
-            <button className="rounded-lg  cursor-pointer px-4 py-2 border border-gray-200 text-[#1a1a1a] dark:text-[#fafafa] font-medium shadow-lg  transition flex items-center gap-2">
+            </a>
+            <a href="#services" className="rounded-lg  cursor-pointer px-4 py-2 border border-gray-200 text-[#1a1a1a] dark:text-[#fafafa] font-medium shadow-lg  transition flex items-center gap-2">
               <Play className="w-4 h-4 text-gray-800 dark:text-[#fafafa]" /> View Services
-            </button>
+            </a>
           </div>
         </div>
 
