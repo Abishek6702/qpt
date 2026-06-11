@@ -68,7 +68,7 @@ export default function ContactForm() {
                       <FaPhoneAlt size={22} />
                     </div>
 
-                    <p className="text-white ">+1 (555) 123-4567</p>
+                    <p className="text-white ">9788915620</p>
                   </div>
 
                   {/* Email */}
@@ -77,7 +77,7 @@ export default function ContactForm() {
                       <IoMdMail size={22} />
                     </div>
 
-                    <p className="text-white ">hello@softwareco.com</p>
+                    <p className="text-white ">quantumpulsetechnologiespvtltd@gmail.com</p>
                   </div>
 
                   {/* Address */}
@@ -87,7 +87,7 @@ export default function ContactForm() {
                     </div>
 
                     <p className="text-white leading-relaxed w">
-                      123 Tech Street, San Francisco, CA 94105, United States
+                      Sri Eshwar College of Engineering, Kondampatty, Kinathukadavu, Coimbatore 641202
                     </p>
                   </div>
                 </div>
