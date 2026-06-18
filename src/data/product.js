@@ -1,72 +1,74 @@
 export const products = [
   {
-    title: "Admission Portal",
+    title: "Admyra",
     description:
-      "See your MRR and active users in one clean, unified view — no more switching tabs.",
+      "Manage the complete admission lifecycle from student applications to enrollment with speed, accuracy, and transparency.",
     image: "/admission.svg",
-    link: "http://13.51.227.15/",
+    link: "https://srieshwaradmissions.com/",
+    logo:'/adm2.svg'
   },
   {
-    title: "Events Explorer",
+    title: "Evomira",
     description:
-      "Actionable suggestions from your data, without digging into spreadsheets or dashboards.",
+      "Plan, organize, and track events efficiently with scheduling, registrations, approvals, and real-time coordination tools.",
     image: "/events.svg",
-    link: "http://13.51.227.15/",
-
+    link: "#",
+    logo:'/event1.svg'
   },
   {
-    title: "Appraisal Dashboard",
+    title: "Meritra",
     description:
-      "Track how users engage with your app live to uncover patterns and optimize features.",
+      "Automate performance evaluations, goal tracking, feedback collection, and appraisal workflows to support employee growth.",
     image: "/appraisal.svg",
     link: "http://51.20.120.152/",
+    logo:'/appraisal2.svg'
   },
   {
-    title: "HRMS Analytics",
+    title: "Humvora",
     description:
-      "Know exactly which features drive long-term retention—and which ones don't contribute.",
+      "Manage employee records, attendance, leave, payroll, and workforce operations through a centralized HR platform.",
     image: "/hrms.svg",
-    link: "http://51.20.120.152/",
-
+    link: "#",
+    logo:'/hrms1.svg'
   },
   {
-    title: "Finance Portal",
+    title: "Finzora",
     description:
-      "Streamline your financial processes and gain valuable insights with our comprehensive finance portal.",
+      "Streamline financial operations with budgeting, expense tracking, reporting, approvals, and real-time financial insights.",
     image: "/finance.svg",
-    link: "http://51.20.120.152/",
-
+    link: "#",
+    logo:'/finance1.svg'
   },
   {
-    title: "Learning Management System",
+    title: "Eduvanta",
     description:
-      "Empower your organization with our intuitive learning management system.",
+      "Deliver engaging learning experiences through course management, assessments, progress tracking, and collaborative tools.",
     image: "/lms.svg",
-    link: "http://51.20.120.152/",
-
+    link: "#",
+    logo:'/lm2.svg'
   },
   {
-    title: "Job Portal",
+    title: "Carvion",
     description:
-      "Empower your organization with our intuitive learning management system.",
+      "Connect employers and job seekers through streamlined recruitment, application tracking, candidate management, and hiring tools.",
     image: "/job.svg",
-    link: "http://51.20.120.152/",
-
+    link: "#",
+    logo:'/job1.svg'
   },
   {
-    title: "Hostel Management",
+    title: "Dormvanta",
     description:
-      "Empower your organization with our intuitive learning management system.",
+      "Manage hostel operations efficiently with room allocation, occupancy tracking, fee management, and resident records.",
     image: "/hms.svg",
     link: "http://51.21.128.205/",
-
+    logo:'/hostel.svg'
   },
   {
-    title: "Resort Booking  ",
+    title: "Stayvoro",
     description:
-      "Empower your organization with our intuitive learning management system.",
+      "Simplify resort reservations with online bookings, availability management, guest services, and payment tracking.",
     image: "/resort.svg",
-    link: "http://51.20.120.152/",
-
+    link: "http://13.61.190.166/",
+    logo:'/resort1.svg'
   },
 ];

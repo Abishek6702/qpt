@@ -7,50 +7,52 @@ import Link from "next/link";
 
 const products = [
   {
-    title: "Admission Portal",
+    title: "Admyra",
     description:
-      "See your MRR and active users in one clean, unified view — no more switching tabs.",
+      "Manage the complete admission lifecycle from student applications to enrollment with speed, accuracy, and transparency.",
     image: "/admission.svg",
-    link: "http://13.51.227.15/",
+    link: "https://srieshwaradmissions.com/",
+    logo: "/adm2.svg",
   },
   {
-    title: "Events Explorer",
+    title: "Evomira",
     description:
-      "Actionable suggestions from your data, without digging into spreadsheets or dashboards.",
+      "Plan, organize, and track events efficiently with scheduling, registrations, approvals, and real-time coordination tools.",
     image: "/events.svg",
-    link: "http://13.51.227.15/",
-
+    link: "#",
+    logo: "/event1.svg",
   },
   {
-    title: "Appraisal Dashboard",
+    title: "Meritra",
     description:
-      "Track how users engage with your app live to uncover patterns and optimize features.",
+      "Automate performance evaluations, goal tracking, feedback collection, and appraisal workflows to support employee growth.",
     image: "/appraisal.svg",
     link: "http://51.20.120.152/",
+    logo: "/appraisal2.svg",
   },
   {
-    title: "HRMS Analytics",
+    title: "Humvora",
     description:
-      "Know exactly which features drive long-term retention—and which ones don't contribute.",
+      "Manage employee records, attendance, leave, payroll, and workforce operations through a centralized HR platform.",
     image: "/hrms.svg",
-    link: "http://51.20.120.152/",
-
+    link: "#",
+    logo: "/hrms1.svg",
   },
   {
-    title: "Finance Portal",
+    title: "Finzora",
     description:
-      "Streamline your financial processes and gain valuable insights with our comprehensive finance portal.",
+      "Streamline financial operations with budgeting, expense tracking, reporting, approvals, and real-time financial insights.",
     image: "/finance.svg",
-    link: "http://51.20.120.152/",
-
+    link: "#",
+    logo: "/finance1.svg",
   },
   {
-    title: "Learning Management System",
+    title: "Eduvanta",
     description:
-      "Empower your organization with our intuitive learning management system.",
+      "Deliver engaging learning experiences through course management, assessments, progress tracking, and collaborative tools.",
     image: "/lms.svg",
-    link: "http://51.20.120.152/",
-
+    link: "#",
+    logo: "/lm2.svg",
   },
 ];
 export default function Products() {
@@ -118,23 +120,41 @@ export default function Products() {
 
               {/* Content */}
               <div className="px-4 pb-4 flex flex-col  justify-between">
-                <div className="">
-                  <h3 className="text-xl lato font-bold tracking-tight text-[#1a1a1a] dark:text-[#e2e8f0] leading-[1.2]">
-                    {product.title}
-                  </h3>
+                <div>
+                  {/* <h3 className="text-xl lato font-bold tracking-tight text-[#1a1a1a] dark:text-[#e2e8f0]">
+                                    {product.title}
+                                  </h3> */}
+                  <Image
+                    src={product.logo}
+                    alt={product.title}
+                    // fill
+                    height={150}
+                    className="object-cover"
+                    width={150}
+                  />
 
-                  <p className=" text-gray-500 mt-2  dark:text-[#e2e8f0]/75 ">
+                  <p className="text-gray-500 mt-2 dark:text-[#e2e8f0]/75">
                     {product.description}
                   </p>
                 </div>
-                <Link
-  href={product.link}
-  target="_blank" // remove if it's an internal page
-  className="rounded-lg w-fit mt-2 bg-[#2563EB] px-4 py-2 text-white font-medium shadow-lg hover:bg-[#2557d9] transition flex items-center gap-2"
->
-  Explore
-  <ArrowUpRight className="w-5 h-5" />
-</Link>
+                {product.link !== "#" ? (
+                  <Link
+                    href={product.link}
+                    target="_blank"
+                    className="rounded-lg w-fit mt-2 bg-[#2563EB] px-4 py-2 text-white font-medium shadow-lg hover:bg-[#2557d9] transition flex items-center gap-2"
+                  >
+                    Explore
+                    <ArrowUpRight className="w-5 h-5" />
+                  </Link>
+                ) : (
+                  <button
+                    disabled
+                    className="rounded-lg w-fit mt-2 bg-[#2563EB] px-4 py-2 text-white font-medium shadow-lg hover:bg-[#2557d9] transition flex items-center gap-2"
+                  >
+                    Explore
+                    <ArrowUpRight className="w-5 h-5" />
+                  </button>
+                )}
               </div>
             </div>
           ))}
