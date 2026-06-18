@@ -17,7 +17,7 @@ export default function Home() {
 
       <main className="bg-[#f6f6f6] dark:bg-[#0a0e1a] text-slate-900 dark:text-slate-100 transition-colors duration-300">
         <Hero />
-        <LogoCursor />
+        {/* <LogoCursor /> */}
         <About />
         <Products />
         <WhyChooseUs />

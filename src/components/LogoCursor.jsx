@@ -8,7 +8,18 @@ const logos = [
   "/s5.svg",
   "/s6.svg",
 ];
+// const logos = [
+//   "/admissionw.svg",
+//   "/financew.svg",
+//   "/eventw.svg",
+//   "/hrmsw.svg",
+//   "/lmsw.svg",
+//   "/jobw.svg",
+//   "/resortw.svg",
+//   "/hostelw.svg",
+//   "/appraisalw.svg",
 
+// ];
 
 export default function LogoCarousel() {
   return (
