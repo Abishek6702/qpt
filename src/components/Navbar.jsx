@@ -39,15 +39,16 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800 bg-[#ffffff] dark:bg-[#222d40]">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 ">
+      <div className="mx-auto flex  items-center justify-between px-6 ">
         <div className=" px-4 py-1 rounded-lg ">
           {/* Logo Left */}
-          <a href="/" className="flex items-center">
+          <a href="/" className="flex items-center gap-4 ">
             <img
               src="/qpt.svg"
               alt="QPT Logo"
               className="h-16 object-contain  rounded-lg bg-white"
             />
+            <p className="font-semibold text-lg ">QuantumPulse Technologies Pvt Ltd</p>
           </a>
         </div>
 

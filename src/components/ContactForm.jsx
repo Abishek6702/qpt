@@ -87,13 +87,13 @@ export default function ContactForm() {
               <div className="">
                 <div className="space-y-4 relative z-10 mb-14">
                   {/* Phone */}
-                  <div className="flex items-center gap-4">
+                  {/* <div className="flex items-center gap-4">
                     <div className="text-white">
                       <FaPhoneAlt size={22} />
                     </div>
 
                     <p className="text-white ">9788915620</p>
-                  </div>
+                  </div> */}
 
                   {/* Email */}
                   <div className="flex items-center gap-4">
@@ -111,7 +111,7 @@ export default function ContactForm() {
                     </div>
 
                     <p className="text-white leading-relaxed w">
-                      Sri Eshwar College of Engineering, Kondampatty, Kinathukadavu, Coimbatore 641202
+                      QuantumPulse Technologies Pvt Ltd, Sri Eshwar College of Engineering, Kondampatty, Kinathukadavu, Coimbatore 641202
                     </p>
                   </div>
                 </div>

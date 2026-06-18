@@ -5,7 +5,8 @@ export const products = [
       "Manage the complete admission lifecycle from student applications to enrollment with speed, accuracy, and transparency.",
     image: "/admission.svg",
     link: "https://srieshwaradmissions.com/",
-    logo:'/adm2.svg'
+    logo: "/admissionw.svg",
+    logob: "/admissionb.svg",
   },
   {
     title: "Evomira",
@@ -13,7 +14,8 @@ export const products = [
       "Plan, organize, and track events efficiently with scheduling, registrations, approvals, and real-time coordination tools.",
     image: "/events.svg",
     link: "#",
-    logo:'/event1.svg'
+    logo: "/eventw.svg",
+    logob: "/eventb.svg",
   },
   {
     title: "Meritra",
@@ -21,7 +23,8 @@ export const products = [
       "Automate performance evaluations, goal tracking, feedback collection, and appraisal workflows to support employee growth.",
     image: "/appraisal.svg",
     link: "http://51.20.120.152/",
-    logo:'/appraisal2.svg'
+    logo: "/appraisalw.svg",
+    logob:'/appraisalb.svg'
   },
   {
     title: "Humvora",
@@ -29,7 +32,8 @@ export const products = [
       "Manage employee records, attendance, leave, payroll, and workforce operations through a centralized HR platform.",
     image: "/hrms.svg",
     link: "#",
-    logo:'/hrms1.svg'
+    logo: "/hrmsw.svg",
+    logob:'/hrmsb.svg'
   },
   {
     title: "Finzora",
@@ -37,7 +41,8 @@ export const products = [
       "Streamline financial operations with budgeting, expense tracking, reporting, approvals, and real-time financial insights.",
     image: "/finance.svg",
     link: "#",
-    logo:'/finance1.svg'
+    logo: "/financew.svg",
+    logob:'/financeb.svg'
   },
   {
     title: "Eduvanta",
@@ -45,7 +50,8 @@ export const products = [
       "Deliver engaging learning experiences through course management, assessments, progress tracking, and collaborative tools.",
     image: "/lms.svg",
     link: "#",
-    logo:'/lm2.svg'
+    logo: "/lmsw.svg",
+    logob:'/lmsb.svg'
   },
   {
     title: "Carvion",
@@ -53,7 +59,8 @@ export const products = [
       "Connect employers and job seekers through streamlined recruitment, application tracking, candidate management, and hiring tools.",
     image: "/job.svg",
     link: "#",
-    logo:'/job1.svg'
+    logo: "/jobw.svg",
+    logob:'/jobb.svg'
   },
   {
     title: "Dormvanta",
@@ -61,7 +68,8 @@ export const products = [
       "Manage hostel operations efficiently with room allocation, occupancy tracking, fee management, and resident records.",
     image: "/hms.svg",
     link: "http://51.21.128.205/",
-    logo:'/hostel.svg'
+    logo: "/hostelw.svg",
+    logob:'/hostelb.svg'
   },
   {
     title: "Stayvoro",
@@ -69,6 +77,7 @@ export const products = [
       "Simplify resort reservations with online bookings, availability management, guest services, and payment tracking.",
     image: "/resort.svg",
     link: "http://13.61.190.166/",
-    logo:'/resort1.svg'
+    logo: "/resortw.svg",
+    logob:'/resortb.svg'
   },
 ];

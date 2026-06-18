@@ -5,56 +5,8 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 
-const products = [
-  {
-    title: "Admyra",
-    description:
-      "Manage the complete admission lifecycle from student applications to enrollment with speed, accuracy, and transparency.",
-    image: "/admission.svg",
-    link: "https://srieshwaradmissions.com/",
-    logo: "/adm2.svg",
-  },
-  {
-    title: "Evomira",
-    description:
-      "Plan, organize, and track events efficiently with scheduling, registrations, approvals, and real-time coordination tools.",
-    image: "/events.svg",
-    link: "#",
-    logo: "/event1.svg",
-  },
-  {
-    title: "Meritra",
-    description:
-      "Automate performance evaluations, goal tracking, feedback collection, and appraisal workflows to support employee growth.",
-    image: "/appraisal.svg",
-    link: "http://51.20.120.152/",
-    logo: "/appraisal2.svg",
-  },
-  {
-    title: "Humvora",
-    description:
-      "Manage employee records, attendance, leave, payroll, and workforce operations through a centralized HR platform.",
-    image: "/hrms.svg",
-    link: "#",
-    logo: "/hrms1.svg",
-  },
-  {
-    title: "Finzora",
-    description:
-      "Streamline financial operations with budgeting, expense tracking, reporting, approvals, and real-time financial insights.",
-    image: "/finance.svg",
-    link: "#",
-    logo: "/finance1.svg",
-  },
-  {
-    title: "Eduvanta",
-    description:
-      "Deliver engaging learning experiences through course management, assessments, progress tracking, and collaborative tools.",
-    image: "/lms.svg",
-    link: "#",
-    logo: "/lm2.svg",
-  },
-];
+import { products } from "@/data/product";
+
 export default function Products() {
   return (
     <section id="products" className="">
@@ -87,7 +39,7 @@ export default function Products() {
         </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
-          {products.map((product, index) => (
+          {products.slice(0, 6).map((product, index) => (
             <div
               key={index}
               className="
@@ -129,7 +81,15 @@ export default function Products() {
                     alt={product.title}
                     // fill
                     height={150}
-                    className="object-cover"
+                    className="object-cover dark:hidden"
+                    width={150}
+                  />
+                  <Image
+                    src={product.logob}
+                    alt={product.title}
+                    // fill
+                    height={150}
+                    className="object-cover hidden dark:block"
                     width={150}
                   />
 

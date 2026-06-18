@@ -56,6 +56,7 @@ export default function ProductsPage() {
                     className="object-cover w-full h-full rounded-xl"
                     width={100}
                   />
+                  
                 </div>
               </div>
 
@@ -69,7 +70,15 @@ export default function ProductsPage() {
                     alt={product.title}
                     // fill
                     height={150}
-                    className="object-cover"
+                    className="object-cover dark:hidden"
+                    width={150}
+                  />
+                   <Image
+                    src={product.logob}
+                    alt={product.title}
+                    // fill
+                    height={150}
+                    className="object-cover hidden dark:block"
                     width={150}
                   />
 

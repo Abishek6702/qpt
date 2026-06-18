@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-6 text-sm text-slate-600 dark:text-slate-400">
         <div className="flex items-center justify-between">
          
-        <p className="">© {new Date().getFullYear()} QuantumPulse Technologies. All rights reserved.</p>
+        <p className="">© {new Date().getFullYear()} QuantumPulse Technologies Pvt Ltd. All rights reserved.</p>
           <div className="flex flex-wrap gap-4">
             <a href="#about" className="hover:text-indigo-600 dark:hover:text-indigo-400">About</a>
             <a href="#services" className="hover:text-indigo-600 dark:hover:text-indigo-400">Services</a>
