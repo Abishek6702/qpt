@@ -1,6 +1,11 @@
 "use client";
 
-import { TypeAnimation } from "react-type-animation";
+import dynamic from "next/dynamic";
+
+const TypeAnimation = dynamic(
+  () => import("react-type-animation").then((mod) => mod.TypeAnimation),
+  { ssr: false }
+);
 import {
   Smartphone,
   Globe,
@@ -93,34 +98,11 @@ export default function Services() {
           return (
             <div
               key={service.title}
-              className="
-                group
-                h-full
-                rounded-2xl
-                border
-                border-slate-200
-                dark:border-slate-800
-                bg-white
-                dark:bg-slate-900
-                p-6
-                transition-all
-                duration-300
-                hover:-translate-y-2
-                hover:shadow-xl
-                dark:hover:border-slate-700
-                shadow-lg
-              "
+              className="group h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-slate-700"
             >
               {/* Icon */}
               <div
-                className={`
-                  w-12 h-12
-                  rounded-xl
-                  bg-gradient-to-br
-                  ${service.color}
-                  flex items-center justify-center
-                  shadow-lg
-                `}
+                className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br shadow-lg ${service.color}`}
               >
                 <Icon size={26} className="text-white" />
               </div>

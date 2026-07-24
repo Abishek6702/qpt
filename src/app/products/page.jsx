@@ -1,7 +1,12 @@
 "use client";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { TypeAnimation } from "react-type-animation";
+import dynamic from "next/dynamic";
+
+const TypeAnimation = dynamic(
+  () => import("react-type-animation").then((mod) => mod.TypeAnimation),
+  { ssr: false }
+);
 import Link from "next/link";
 
 import { products } from "@/data/product";

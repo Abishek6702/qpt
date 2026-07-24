@@ -13,7 +13,7 @@ export default function About() {
             alt="About Us"
             width={500}
             height={500}
-            className="object-fit m-auto"
+            className="m-auto h-auto w-full max-w-[500px] object-contain"
             priority
           />
         </div>

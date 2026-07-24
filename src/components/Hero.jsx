@@ -8,7 +8,12 @@ import {
   Play,
   ShieldCheck,
 } from "lucide-react";
-import { TypeAnimation } from "react-type-animation";
+import dynamic from "next/dynamic";
+
+const TypeAnimation = dynamic(
+  () => import("react-type-animation").then((mod) => mod.TypeAnimation),
+  { ssr: false }
+);
 
 export default function Hero() {
   return (

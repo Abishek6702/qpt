@@ -7,7 +7,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Star } from "lucide-react";
-import { TypeAnimation } from "react-type-animation";
+import dynamic from "next/dynamic";
+
+const TypeAnimation = dynamic(
+  () => import("react-type-animation").then((mod) => mod.TypeAnimation),
+  { ssr: false }
+);
 
 import "swiper/css";
 
@@ -141,7 +146,7 @@ export default function Testimonials() {
 
                 {/* Quote */}
                 <p className="mt-2 py-4 text-xl text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75 lato flex-1">
-                  "{item.quote}"
+                  &quot;{item.quote}&quot;
                 </p>
 
                 {/* Divider */}

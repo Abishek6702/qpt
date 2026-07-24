@@ -2,7 +2,12 @@
 
 import { ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
-import { TypeAnimation } from "react-type-animation";
+import dynamic from "next/dynamic";
+
+const TypeAnimation = dynamic(
+  () => import("react-type-animation").then((mod) => mod.TypeAnimation),
+  { ssr: false }
+);
 
 const FAQ_ITEMS = [
   {
@@ -46,15 +51,11 @@ function AccordionItem({ item, isOpen, onToggle }) {
         </span>
 
         <span
-          className={`
-      flex h-8 w-8 items-center justify-center rounded-xl
-      transition-all duration-300 cursor-pointer
-      ${
+          className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl transition-all duration-300 ${
         isOpen
           ? "bg-[#2563EB] text-white rotate-180"
           : "bg-[#F3F4F6] dark:bg-[#222c3e] text-[#1a1a1a]/80 dark:text-[#e2e8f0]/75"
-      }
-    `}
+      }`}
         >
           <ChevronDown size={20} />
         </span>

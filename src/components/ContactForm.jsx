@@ -1,7 +1,12 @@
 "use client";
 import { useActionState, useEffect, useRef, useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send, PhoneCall } from "lucide-react";
-import { TypeAnimation } from "react-type-animation";
+import dynamic from "next/dynamic";
+
+const TypeAnimation = dynamic(
+  () => import("react-type-animation").then((mod) => mod.TypeAnimation),
+  { ssr: false }
+);
 import { FaFacebook, FaTwitter, FaLinkedin, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { sendContactEmail } from "@/app/actions";
@@ -13,12 +18,16 @@ export default function ContactForm() {
 
   useEffect(() => {
     if (state) {
-      if (state.success) {
-        formRef.current?.reset();
-        setToast({ type: "success", message: state.message || state.warning });
-      } else {
-        setToast({ type: "error", message: state.error });
-      }
+      const timer = setTimeout(() => {
+        if (state.success) {
+          formRef.current?.reset();
+          setToast({ type: "success", message: state.message || state.warning });
+        } else {
+          setToast({ type: "error", message: state.error });
+        }
+      }, 0);
+
+      return () => clearTimeout(timer);
     }
   }, [state]);
 
@@ -35,17 +44,7 @@ export default function ContactForm() {
       className="relative overflow-hidden dark:bg-[#0a0e1a] pb-10 "
     >
       <div
-        className="
-    absolute
-    top-34
-    left-0
-    h-[300px]
-    w-[300px]
-    rounded-full
-    blur-[100px]
-    opacity-90
-    dark:hidden
-  "
+        className="absolute top-34 left-0 h-[300px] w-[300px] rounded-full blur-[100px] opacity-90 dark:hidden"
         // style={{
         //   background:
         //     "linear-gradient(224.13deg, #9AB9FF 0%, #C8DAFF 50.18%, #E2E8F0 98.53%)",

@@ -2,7 +2,12 @@
 
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
+import dynamic from "next/dynamic";
+
+const TypeAnimation = dynamic(
+  () => import("react-type-animation").then((mod) => mod.TypeAnimation),
+  { ssr: false }
+);
 import Link from "next/link";
 
 import { products } from "@/data/product";
@@ -42,19 +47,7 @@ export default function Products() {
           {products.slice(0, 6).map((product, index) => (
             <div
               key={index}
-              className="
-                rounded-3xl
-                border
-                border-slate-200
-                dark:border-slate-800
-                bg-white
-                dark:bg-[#0a0e1a]
-                overflow-hidden
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:shadow-xl
-              "
+              className="rounded-3xl border border-slate-200 bg-white overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-[#0a0e1a]"
             >
               {/* Mockup Area */}
               <div className="bg-[#f8f8f8] dark:bg-[#111827] m-4 rounded-xl">
@@ -62,10 +55,9 @@ export default function Products() {
                   <Image
                     src={product.image}
                     alt={product.title}
-                    // fill
-                    height={100}
-                    className="object-cover w-full h-full rounded-xl"
-                    width={100}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 100vw"
+                    className="rounded-xl object-cover"
                   />
                 </div>
               </div>
@@ -79,18 +71,16 @@ export default function Products() {
                   <Image
                     src={product.logo}
                     alt={product.title}
-                    // fill
-                    height={150}
-                    className="object-cover dark:hidden"
-                    width={150}
+                    width={253}
+                    height={83}
+                    className="h-auto w-[150px] dark:hidden"
                   />
                   <Image
                     src={product.logob}
                     alt={product.title}
-                    // fill
-                    height={150}
-                    className="object-cover hidden dark:block"
-                    width={150}
+                    width={253}
+                    height={83}
+                    className="hidden h-auto w-[150px] dark:block"
                   />
 
                   <p className="text-gray-500 mt-2 dark:text-[#e2e8f0]/75">

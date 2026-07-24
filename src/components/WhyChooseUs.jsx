@@ -1,6 +1,11 @@
 "use client";
 
-import { TypeAnimation } from "react-type-animation";
+import dynamic from "next/dynamic";
+
+const TypeAnimation = dynamic(
+  () => import("react-type-animation").then((mod) => mod.TypeAnimation),
+  { ssr: false }
+);
 import { Zap, Users, Shield, Clock3, Headphones } from "lucide-react";
 
 const features = [
@@ -90,48 +95,15 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={index}
-                className={`
-                  ${item.span}
-                  ${item.bg}
-                  ${item.darkBg}
-                  rounded-2xl
-                  p-8
-                  relative
-                  overflow-hidden
-                  border
-                  border-transparent
-                  dark:border-white/5
-                  shadow-lg
-                `}
+                className={`${item.span} ${item.bg} ${item.darkBg} relative overflow-hidden rounded-2xl border border-transparent p-8 shadow-lg dark:border-white/5`}
               >
                 {/* Soft glow */}
                 <div
-                  className={`
-    absolute
-    top-8
-    right-8
-    h-20
-    w-20
-    rounded-full
-    ${item.iconBg}
-    blur-3xl
-    opacity-20
-    dark:opacity-20
-  `}
+                  className={`absolute top-8 right-8 h-20 w-20 rounded-full blur-3xl opacity-20 dark:opacity-20 ${item.iconBg}`}
                 />
 
                 <div
-                  className={`
-                    ${item.iconBg}
-                    h-12
-                    w-12
-                    rounded-2xl
-                    flex
-                    items-center
-                    justify-center
-                    text-white
-                    shadow-lg
-                  `}
+                  className={`flex h-12 w-12 items-center justify-center rounded-2xl text-white shadow-lg ${item.iconBg}`}
                 >
                   <Icon size={24} />
                 </div>

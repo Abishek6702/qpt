@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { Sun, Moon, Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -13,21 +14,21 @@ const navLinks = [
 export default function Navbar() {
   const [theme, setTheme] = useState("light");
   const [isOpen, setIsOpen] = useState(false);
-
+  const [mounted, setMounted] = useState(false);
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
+    const frame = requestAnimationFrame(() => {
+      const savedTheme = localStorage.getItem("theme");
+      const nextTheme = savedTheme === "dark" ? "dark" : "light";
 
-    if (savedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-      setTheme("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      setTheme("light");
-    }
+      document.documentElement.classList.toggle("dark", nextTheme === "dark");
+      setTheme(nextTheme);
+      setMounted(true);
+    });
+
+    return () => cancelAnimationFrame(frame);
   }, []);
 
   useEffect(() => {
-    console.log("Theme:", theme);
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
@@ -37,19 +38,23 @@ export default function Navbar() {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <nav className="sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800 bg-[#ffffff] dark:bg-[#222d40]">
       <div className="mx-auto flex  items-center justify-between px-6 ">
         <div className=" px-4 py-1 rounded-lg ">
           {/* Logo Left */}
-          <a href="/" className="flex items-center gap-4 ">
+          <Link href="/" className="flex items-center gap-4 ">
             <img
               src="/qpt.svg"
               alt="QPT Logo"
               className="h-16 object-contain  rounded-lg bg-white"
             />
             <p className="font-semibold text-lg ">QuantumPulse Technologies Pvt Ltd</p>
-          </a>
+          </Link>
         </div>
 
         {/* Center Navigation */}
@@ -75,7 +80,7 @@ export default function Navbar() {
             className="rounded-full p-2 cursor-pointer bg-[#f6f6f6] text-slate-700  dark:bg-slate-800 dark:text-slate-100
   "
           >
-            {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+           {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
           </button>
 
           {/* Mobile Menu Button */}
