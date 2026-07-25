@@ -9,6 +9,42 @@ export const products = [
     logob: "/admissionb.svg",
   },
   {
+    title: "Sengara",
+    description:
+      "Simplify resort reservations with online bookings, availability management, guest services, and payment tracking.",
+    image: "/sengara.png",
+    link: "https://zinc-strictly-gospel-occupation.trycloudflare.com/",
+    logo: "/Sengara.svg",
+    logob:'/Sengara.svg'
+  },
+  {
+    title: "Singara Seemai",
+    description:
+      "Simplify resort reservations with online bookings, availability management, guest services, and payment tracking.",
+    image: "/singaraseemai.png",
+    link: "https://creek-remain-gets-icons.trycloudflare.com/",
+    logo: "/singaraseemai.svg",
+    logob:'/singaraseemai.svg'
+  },
+  {
+    title: "Visitors System",
+    description:
+      "Simplify resort reservations with online bookings, availability management, guest services, and payment tracking.",
+    image: "/visitor.png",
+    link: "https://naval-poster-previously-lodging.trycloudflare.com/",
+    logo: "/visitor.svg",
+    logob:'/visitor.svg'
+  },
+  {
+    title: "Quantum Quick Cart",
+    description:
+      "Simplify resort reservations with online bookings, availability management, guest services, and payment tracking.",
+    image: "/cart.png",
+    link: "https://complications-customers-russell-lived.trycloudflare.com/",
+    logo: "/cart.svg",
+    logob:'/cart.svg'
+  },
+  {
     title: "Evomira",
     description:
       "Plan, organize, and track events efficiently with scheduling, registrations, approvals, and real-time coordination tools.",
@@ -31,7 +67,7 @@ export const products = [
     description:
       "Manage employee records, attendance, leave, payroll, and workforce operations through a centralized HR platform.",
     image: "/hrms.svg",
-    link: "#",
+    link: "https://srieshwarems.com/",
     logo: "/hrmsw.svg",
     logob:'/hrmsb.svg'
   },
@@ -80,4 +116,5 @@ export const products = [
     logo: "/resortw.svg",
     logob:'/resortb.svg'
   },
+
 ];
