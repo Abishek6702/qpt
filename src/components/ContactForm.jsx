@@ -5,9 +5,15 @@ import dynamic from "next/dynamic";
 
 const TypeAnimation = dynamic(
   () => import("react-type-animation").then((mod) => mod.TypeAnimation),
-  { ssr: false }
+  { ssr: false },
 );
-import { FaFacebook, FaTwitter, FaLinkedin, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { sendContactEmail } from "@/app/actions";
 
@@ -21,7 +27,10 @@ export default function ContactForm() {
       const timer = setTimeout(() => {
         if (state.success) {
           formRef.current?.reset();
-          setToast({ type: "success", message: state.message || state.warning });
+          setToast({
+            type: "success",
+            message: state.message || state.warning,
+          });
         } else {
           setToast({ type: "error", message: state.error });
         }
@@ -54,7 +63,7 @@ export default function ContactForm() {
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="mt-6 lato  text-[42px] text-[#1a1a1a] font-bold  dark:text-[#e2e8f0]">
-              Get in{" "}
+            Get in{" "}
             <span className="text-[#2563EB] dark:text-[#3B82F6]">
               <TypeAnimation
                 sequence={["Touch", 2000, "", 500]}
@@ -74,78 +83,85 @@ export default function ContactForm() {
         <div className="flex items-center gap-4 h-full">
           {/* Left Side */}
           <div className=" md:w-[40%] h-full hidden lg:block">
-            <div className="relative overflow-hidden z-100 h-[65vh] w-full bg-[#011c2b] dark:bg-slate-900 rounded-xl p-6 flex flex-col justify-between">
-              <div className="headeing">
-                <h1 className="lato  text-2xl text-[#fafafa] font-bold  dark:text-[#e2e8f0]">
-                  Contact Information
-                </h1>
-                <p className=" font-normal text-[#fafafa]/80 dark:text-[#e2e8f0]/75">
-                  Say something to start live chat!
-                </p>
-              </div>
-              <div className="">
-                <div className="space-y-4 relative z-10 mb-14">
-                  {/* Phone */}
-                  {/* <div className="flex items-center gap-4">
-                    <div className="text-white">
-                      <FaPhoneAlt size={22} />
-                    </div>
+            <div className="relative overflow-hidden z-10 h-[65vh] w-full bg-[#011c2b] dark:bg-slate-900 rounded-xl p-8 flex flex-col justify-between">
+              {/* Company Details */}
+              <div>
+                <span className="inline-block rounded-full bg-blue-500/20 text-blue-300 px-3 py-1 text-sm font-medium">
+                  Software Development Company
+                </span>
 
-                    <p className="text-white ">9788915620</p>
-                  </div> */}
+                <h1 className="mt-4 text-2xl font-bold text-white">
+                  QuantumPulse Technologies Pvt. Ltd.
+                </h1>
+
+                <div className="mt-8 space-y-5">
+                  {/* Headquarters */}
+
+                  {/* Main Branch */}
+                  <div className="flex items-start gap-4">
+                    <FaMapMarkerAlt className="mt-1 text-blue-400" size={24} />
+                    <div>
+                      <p className="text-white/70 text-sm">
+                        QuantumPulse Technologies Pvt. Ltd. Sri Eshwar College
+                        of Engineering Kondampatty, Kinathukadavu, Coimbatore -
+                        641202
+                      </p>
+                    </div>
+                  </div>
 
                   {/* Email */}
                   <div className="flex items-center gap-4">
-                    <div className="text-white">
-                      <IoMdMail size={22} />
-                    </div>
-
-                    <p className="text-white ">quantumpulsetechnologiespvtltd@gmail.com</p>
+                    <IoMdMail className="text-blue-400" size={20} />
+                    <p className="text-white text-sm">
+                      quantumpulsetechnologiespvtltd@gmail.com
+                    </p>
                   </div>
 
-                  {/* Address */}
-                  <div className="flex items-start gap-4">
-                    <div className="text-white mt-1">
-                      <FaMapMarkerAlt size={22} />
-                    </div>
-
-                    <p className="text-white leading-relaxed w">
-                      QuantumPulse Technologies Pvt Ltd, Sri Eshwar College of Engineering, Kondampatty, Kinathukadavu, Coimbatore 641202
+                  {/* Phone */}
+                  <div className="flex items-center gap-4">
+                    <FaPhoneAlt className="text-blue-400" size={18} />
+                    <p className="text-white text-sm">+91 XXXXX XXXXX</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 mt-4 border hidden">
+                  <FaMapMarkerAlt className="mt-1 text-blue-400" size={20} />
+                  <div className=" w-full">
+                    <h3 className="text-white font-semibold">Headquarters</h3>
+                    <p className="text-white/70 text-sm">
+                      QuantumPulse Technologies, 6th,7th Floor, Kochar Globe,
+                      Ambedkar Nagar, SIDCO Industrial Estate, Guindy, Chennai -
+                      600032
                     </p>
                   </div>
                 </div>
               </div>
-
-              <div className="social">
-                <div className="flex items-center gap-4">
-                  <a
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white dark:text-gray-400 "
-                  >
-                    <FaFacebook size={20} />
-                  </a>
-                  <a
-                    href="https://www.twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white dark:text-gray-400  "
-                  >
-                    <FaTwitter size={20} />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white dark:text-gray-400 "
-                  >
-                    <FaLinkedin size={20} />
-                  </a>
+              <div className="pb-10 space-y-6">
+                {/* Headquarters */}
+                <div className="flex items-start gap-4 pt-5">
+                  <FaMapMarkerAlt className="mt-1 text-blue-400" size={24} />
+                  <div>
+                    <h3 className="text-white font-semibold text-xl">
+                      Headquarters
+                    </h3>
+                    <p className="text-white/70 text-sm leading-relaxed">
+                      QuantumPulse Technologies Pvt. Ltd. 6th & 7th Floor,
+                      Kochar Globe, SIDCO Industrial Estate, Guindy, Chennai –
+                      600032
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="absolute -bottom-34 -right-24 z-0 pointer-events-none">
-                <img src="/shape.svg" alt="" className="w-[320px] h-[320px]" />
+              <a
+                href="https://www.linkedin.com/company/quantum-pulse-technologies/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white dark:text-gray-400 "
+              >
+                <FaLinkedin size={20} />
+              </a>
+
+              <div className="absolute -bottom-32 -right-20 opacity-20">
+                <img src="/shape.svg" alt="" className="w-72" />
               </div>
             </div>
           </div>
@@ -154,7 +170,7 @@ export default function ContactForm() {
           <form
             ref={formRef}
             action={formAction}
-            className="rounded-xl md:w-[60%] bg-[#ffffff] dark:bg-[#111827] p-6 shadow-md"
+            className="rounded-xl w-full md:w-[60%] bg-[#ffffff] dark:bg-[#111827] p-6 shadow-md"
           >
             <div className="grid gap-4 md:grid-cols-2">
               <div>
@@ -238,9 +254,25 @@ export default function ContactForm() {
             >
               {pending ? (
                 <>
-                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  <svg
+                    className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
                   </svg>
                   Sending Message...
                 </>
@@ -257,25 +289,47 @@ export default function ContactForm() {
 
       {/* Toast Notification */}
       {toast && (
-        <div className={`fixed top-5 right-5 z-50 flex items-center gap-3 p-4 rounded-xl shadow-2xl border backdrop-blur-md transition-all duration-300 ${
-          toast.type === "success"
-            ? "bg-green-500/10 border-green-500/30 text-green-800 dark:text-green-300"
-            : "bg-red-500/10 border-red-500/30 text-red-800 dark:text-red-300"
-        }`}>
+        <div
+          className={`fixed top-5 right-5 z-50 flex items-center gap-3 p-4 rounded-xl shadow-2xl border backdrop-blur-md transition-all duration-300 ${
+            toast.type === "success"
+              ? "bg-green-500/10 border-green-500/30 text-green-800 dark:text-green-300"
+              : "bg-red-500/10 border-red-500/30 text-red-800 dark:text-red-300"
+          }`}
+        >
           {toast.type === "success" ? (
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-500/20 text-green-600 dark:text-green-400">
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2.5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
               </svg>
             </div>
           ) : (
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-red-500/20 text-red-600 dark:text-red-400">
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2.5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </div>
           )}
-          
+
           <div className="flex flex-col">
             <span className="text-xs font-bold uppercase tracking-wider opacity-60">
               {toast.type === "success" ? "Success" : "Error"}
@@ -287,8 +341,18 @@ export default function ContactForm() {
             onClick={() => setToast(null)}
             className="ml-auto inline-flex h-6 w-6 items-center justify-center rounded-lg text-slate-400 hover:bg-slate-200/50 hover:text-slate-900 dark:hover:bg-slate-800/50 dark:hover:text-white transition-colors"
           >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>

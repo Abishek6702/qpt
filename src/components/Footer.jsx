@@ -14,13 +14,13 @@ export default function Footer() {
             <a href="#contact" className="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a>
           </div>
           <div className="flex items-center gap-4">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-gray-400 ">
+            {/* <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-gray-400 ">
               <FaFacebook size={20} />
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-gray-400  ">
               <FaTwitter size={20} />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-gray-400 ">
+            </a> */}
+            <a href="https://www.linkedin.com/company/quantum-pulse-technologies/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-gray-400 ">
               <FaLinkedin size={20} />
             </a>
           </div>

@@ -51,7 +51,7 @@ export default function Products() {
             >
               {/* Mockup Area */}
               <div className="bg-[#f8f8f8] dark:bg-[#111827] m-4 rounded-xl">
-                <div className="relative h-[200px] w-full  ">
+                <div className="relative h-[200px] w-full">
                   <Image
                     src={product.image}
                     alt={product.title}
@@ -63,11 +63,8 @@ export default function Products() {
               </div>
 
               {/* Content */}
-              <div className="px-4 pb-4 flex flex-col  justify-between">
+              <div className="px-4 pb-4 flex flex-col justify-between">
                 <div>
-                  {/* <h3 className="text-xl lato font-bold tracking-tight text-[#1a1a1a] dark:text-[#e2e8f0]">
-                                    {product.title}
-                                  </h3> */}
                   <Image
                     src={product.logo}
                     alt={product.title}
@@ -87,24 +84,14 @@ export default function Products() {
                     {product.description}
                   </p>
                 </div>
-                {product.link !== "#" ? (
-                  <Link
-                    href={product.link}
-                    target="_blank"
-                    className="rounded-lg w-fit mt-2 bg-[#2563EB] px-4 py-2 text-white font-medium shadow-lg hover:bg-[#2557d9] transition flex items-center gap-2"
-                  >
-                    Explore
-                    <ArrowUpRight className="w-5 h-5" />
-                  </Link>
-                ) : (
-                  <button
-                    disabled
-                    className="rounded-lg w-fit mt-2 bg-[#2563EB] px-4 py-2 text-white font-medium shadow-lg hover:bg-[#2557d9] transition flex items-center gap-2"
-                  >
-                    Explore
-                    <ArrowUpRight className="w-5 h-5" />
-                  </button>
-                )}
+
+                <Link
+                  href={`/products/${product.slug}`}
+                  className="rounded-lg w-fit mt-2 bg-[#2563EB] px-4 py-2 text-white font-medium shadow-lg hover:bg-[#2557d9] transition flex items-center gap-2"
+                >
+                  Explore
+                  <ArrowUpRight className="w-5 h-5" />
+                </Link>
               </div>
             </div>
           ))}

@@ -53,7 +53,7 @@ export default function Navbar() {
               alt="QPT Logo"
               className="h-16 object-contain  rounded-lg bg-white"
             />
-            <p className="font-semibold text-lg ">QuantumPulse Technologies Pvt Ltd</p>
+            <p className="font-semibold text-sm hidden md:block ">QuantumPulse Technologies Pvt Ltd</p>
           </Link>
         </div>
 
