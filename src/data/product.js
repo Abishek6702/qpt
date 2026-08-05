@@ -603,7 +603,7 @@ export const products = [
     logob: "/passb.svg",
     tagline: "Visitor Management Made Secure and Effortless",
     heroDescription:
-      "The Visitors System replaces paper registers with a fully digital visitor management flow — pre-registration, QR-based check-in, host notifications, and real-time visitor logs.",
+      "  Simplify campus visitor entry and exit with a digital gate pass system. Register visitors through QR codes or security staff, generate gate passes instantly, and track every visit with complete transparency and security.",
     spotlightTitle: "QR-based check-in & real-time host notifications",
     spotlightDescription:
       "Visitors pre-register online, receive a QR pass, and check in within seconds — hosts are notified instantly, eliminating front-desk bottlenecks.",
@@ -612,31 +612,31 @@ export const products = [
       "Real-time host SMS and email notifications",
       "Complete visitor log with timestamps and photos",
     ],
-    spotlightImage: "/visitor.png",
+    spotlightImage: "/2.png",
     highlights: [
       {
         icon: "🔐",
-        title: "Secure",
+        title: "QR Code Access",
         description:
-          "Every visitor is verified and logged with photo capture and ID validation.",
+          "Visitors can instantly register by scanning the unique QR code assigned to each college gate.",
       },
       {
         icon: "🌐",
-        title: "Cross-platform",
+        title: "Security Portal",
         description:
-          "Works on reception tablets, mobile, and web — no hardware dependency.",
+          "Security staff can manually register visitors, print gate passes, and verify visitor details.",
       },
       {
         icon: "⚙️",
-        title: "Fully customizable",
+        title: "Admin Dashboard",
         description:
-          "Custom visitor categories, approval flows, and badge templates.",
+          "Manage visitors, security staff, QR codes, gate information, and access detailed reports from one place.",
       },
       {
         icon: "🛡️",
-        title: "Reliable support",
+        title: "Real-Time Visitor Tracking",
         description:
-          "Dedicated support to keep your security operations seamless.",
+          "Track visitor check-in and check-out activities with accurate timestamps and live records.",
       },
     ],
     adminFeatureTitle: "Complete visitor monitoring",
@@ -647,7 +647,7 @@ export const products = [
     techStack: [
       { name: "React", logo: "/react.svg" },
       { name: "Node.js", logo: "/node.svg" },
-      { name: "AWS", logo: "/aws.svg" },
+      { name: "TypeScript", logo: "/typescript.svg" },
     ],
     ctaTitle: "Ready to secure your premises? Let's talk.",
     ctaPoints: [
@@ -655,7 +655,7 @@ export const products = [
       "Complete workflow (Web + Mobile)",
       "Live guidance",
     ],
-    images: ["/visitor.png"],
+    images: ["/1.png","/2.png","/3.png"],
   },
   {
     title: "Quantum Quick Cart",
