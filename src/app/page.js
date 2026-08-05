@@ -9,6 +9,7 @@ import Faq from "@/components/Faq";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import LogoCursor from "@/components/LogoCursor";
+import MyTeam from "@/components/MyTeam";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <WhyChooseUs />
         <Services />
         {/* <Testimonials /> */}
+        <MyTeam/>
         <Faq />
         <ContactForm />
       </main>

@@ -136,6 +136,27 @@ h6 {
   background: #3b82f6 !important;
 }
 
+/* Team carousel pagination */
+.team-swiper .swiper-pagination {
+  margin-top: 2px !important;
+}
+
+.team-swiper .swiper-pagination-bullet,
+.team-swiper .swiper-pagination-bullet-active {
+  width: 9px !important;
+  height: 9px !important;
+  margin: 0 5px !important;
+  border: 1.5px solid #8296a0 !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+.team-swiper .swiper-pagination-bullet-active {
+  border-color: #5d9fc4 !important;
+  background: #5d9fc4 !important;
+}
+
 /* Product detail page — carousel progress bar */
 @keyframes carousel-progress {
   from { width: 0%; }
