@@ -71,7 +71,7 @@ export const products = [
     slug: "admyra",
     description:
       "Manage the complete admission lifecycle from student applications to enrollment with speed, accuracy, and transparency.",
-    image: "/admission.svg",
+    image: "/adm1.svg",
     link: "https://srieshwaradmissions.com/",
     logo: "/admissionw.svg",
     logob: "/admissionb.svg",
@@ -86,7 +86,7 @@ export const products = [
       "Automated shortlisting and merit-list generation",
       "Real-time seat availability and enrollment tracking",
     ],
-    spotlightImage: "/admission.svg",
+    spotlightImage: "/adm1.svg",
     highlights: [
       {
         icon: "⚡",
@@ -117,11 +117,11 @@ export const products = [
     adminFeatureSubtitle: "Advanced admin features",
     adminFeatureDescription:
       "Manage applications, documents, merit lists, seat allocation, and fee payments from one central dashboard.",
-    adminFeatureImage: "/admission.svg",
+    adminFeatureImage: "/adm3.svg",
     techStack: [
       { name: "React", logo: "/react.svg" },
       { name: "Node.js", logo: "/node.svg" },
-      { name: "Next.js", logo: "/next.svg" },
+      { name: "Express.js", logo: "/express.png" },
       { name: "AWS", logo: "/aws.svg" },
     ],
     ctaTitle: "Ready to modernize admissions? Let's talk.",
@@ -130,126 +130,133 @@ export const products = [
       "Complete workflow (Web + Mobile)",
       "Live guidance",
     ],
-    images: ["/admission.svg", "/adm2.svg"],
+    images: ["/adm1.svg", "/adm3.svg", "/adm4.svg", "/adm5.svg", "/adm6.svg"],
   },
   {
     title: "Evomira",
     slug: "evomira",
     description:
-      "Plan, organize, and track events efficiently with scheduling, registrations, approvals, and real-time coordination tools.",
-    image: "/events.svg",
+      "Streamline college event planning with department-wise organization, venue management, event workflows, approvals, rejections, and centralized event tracking.",
+    image: "/event1.png",
     link: "#",
     logo: "/eventw.svg",
     logob: "/eventb.svg",
-    tagline: "End-to-End Event Management at Your Fingertips",
+    tagline: "Simplifying College Events from Planning to Approval",
     heroDescription:
-      "Evomira brings structure to event chaos — from initial planning and speaker scheduling to attendee registrations, approvals, and post-event analytics, all in one platform.",
-    spotlightTitle: "Real-time event scheduling & coordination",
+      "The Event Management Application provides colleges with a centralized platform to organize and manage events across departments. It streamlines event planning, venue requests, resource coordination, and approval workflows while providing complete visibility into the status of every event.",
+    spotlightTitle: "Department-wise event planning & approval workflows",
     spotlightDescription:
-      "Evomira's live coordination tools keep every stakeholder in sync. Organizers, speakers, and attendees all work from the same source of truth.",
+      "The application simplifies the complete event organization process by connecting departments, event coordinators, and approving authorities through a structured digital workflow.",
     spotlightPoints: [
-      "Drag-and-drop event scheduling and agenda builder",
-      "Automated registration confirmations and reminders",
-      "Real-time attendance tracking and check-in",
+      "Department-wise event creation and organization",
+      "Venue request, allocation, and management",
+      "Multi-level event approval and rejection workflows",
+      "Centralized event status and request tracking",
     ],
-    spotlightImage: "/events.svg",
+    spotlightImage: "/event1.png",
     highlights: [
       {
-        icon: "📅",
-        title: "Easy scheduling",
+        icon: "🏫",
+        title: "Department-wise",
         description:
-          "Build complex multi-day event agendas in minutes with our intuitive drag-and-drop planner.",
+          "Organize and manage events independently across different college departments with a structured workflow.",
       },
       {
-        icon: "🌐",
-        title: "Cross-platform",
+        icon: "📍",
+        title: "Venue Management",
         description:
-          "Manage events and check in attendees from web or mobile on the go.",
+          "Manage venue requests and allocations while reducing scheduling conflicts between departments and events.",
       },
       {
-        icon: "🎨",
-        title: "Fully customizable",
+        icon: "✅",
+        title: "Approval Workflow",
         description:
-          "Custom registration forms, branded event pages, and flexible approval workflows.",
+          "Enable authorized users to review, approve, or reject event requests through a centralized approval process.",
       },
       {
-        icon: "🛡️",
-        title: "Reliable support",
+        icon: "📊",
+        title: "Event Tracking",
         description:
-          "Our team supports you before, during, and after every event.",
+          "Track event requests, approval status, schedules, and organizational requirements from a single platform.",
       },
     ],
-    adminFeatureTitle: "Complete event monitoring",
-    adminFeatureSubtitle: "Advanced admin features",
+    adminFeatureTitle: "Complete event administration",
+    adminFeatureSubtitle: "Advanced event management features",
     adminFeatureDescription:
-      "Manage venues, sessions, speakers, registrations, and analytics from one powerful dashboard.",
-    adminFeatureImage: "/events.svg",
+      "Manage departments, events, venues, approvals, rejections, schedules, and event requirements from one centralized dashboard.",
+    adminFeatureImage: "/event3.png",
     techStack: [
       { name: "React", logo: "/react.svg" },
       { name: "Node.js", logo: "/node.svg" },
-      { name: "AWS", logo: "/aws.svg" },
+      { name: "MongoDB", logo: "/mongodb.svg" },
       { name: "Figma", logo: "/figma.svg" },
     ],
-    ctaTitle: "Ready to run flawless events? Let's talk.",
+    ctaTitle: "Ready to simplify college event management? Let's talk.",
     ctaPoints: [
-      "Customization options",
-      "Complete workflow (Web + Mobile)",
-      "Live guidance",
+      "Department-wise event organization",
+      "Complete approval and rejection workflow",
+      "Centralized venue and event management",
     ],
-    images: ["/events.svg", "/event.svg", "/event1.svg"],
+    images: ["/event1.png", "/event2.png", "/event3.png", "/event4.png"],
   },
   {
     title: "Meritra",
     slug: "meritra",
     description:
-      "Automate performance evaluations, goal tracking, feedback collection, and appraisal workflows to support employee growth.",
-    image: "/appraisal.svg",
-    link: "http://51.20.120.152/",
+      "A comprehensive College Appraisal Management System that streamlines faculty performance evaluation, self-appraisal, HOD reviews, IQAC assessment, and management approvals with transparent workflows.",
+    image: "/appraisal1.svg",
+    link: "#",
     logo: "/appraisalw.svg",
     logob: "/appraisalb.svg",
-    tagline: "Performance Management Built for Growth",
+    tagline: "Empowering Faculty Excellence Through Smart Appraisals",
+
     heroDescription:
-      "Meritra transforms how organizations evaluate, reward, and develop talent — replacing spreadsheets and guesswork with structured appraisal cycles, real-time feedback, and goal alignment.",
-    spotlightTitle: "360° feedback & continuous performance tracking",
+      "Campus Meritra digitizes the complete faculty appraisal process—from self-assessment and academic achievements to HOD, Principal, and Management reviews—ensuring transparency, accountability, and continuous professional growth.",
+
+    spotlightTitle: "Complete Faculty Performance & Academic Evaluation",
+
     spotlightDescription:
-      "Meritra enables multi-directional feedback loops so managers and employees always have a clear, fair picture of performance throughout the year.",
+      "Manage faculty appraisals with structured workflows that capture teaching effectiveness, research contributions, publications, student feedback, administrative responsibilities, and professional development.",
+
     spotlightPoints: [
-      "Set OKRs and track goal progress in real time",
-      "Collect peer, manager, and self-review feedback",
-      "Automated appraisal cycles with configurable weightings",
+      "Faculty self-appraisal with evidence uploads",
+      "Multi-level approval workflow (HOD → Principal → Management)",
+      "Research, publications, patents & FDP tracking",
     ],
-    spotlightImage: "/appraisal.svg",
+    spotlightImage: "/appraisal1.svg",
     highlights: [
       {
-        icon: "🎯",
-        title: "Goal-driven",
+        icon: "👨‍🏫",
+        title: "Faculty-Centric",
         description:
-          "Align individual goals with company OKRs for a unified performance culture.",
+          "Evaluate teaching, research, publications, mentoring, and institutional contributions in one platform.",
       },
       {
-        icon: "🌐",
-        title: "Cross-platform",
+        icon: "📊",
+        title: "Comprehensive Analytics",
         description:
-          "Employees and managers engage on web or mobile — anytime, anywhere.",
+          "Generate performance reports, scorecards, department comparisons, and accreditation-ready reports.",
       },
       {
         icon: "⚙️",
-        title: "Fully customizable",
+        title: "Customizable Workflows",
         description:
-          "Tailor appraisal forms, rating scales, cycles, and workflows to your process.",
+          "Configure appraisal forms, scoring criteria, academic years, approval stages, and department-specific evaluations.",
       },
       {
-        icon: "🛡️",
-        title: "Reliable support",
+        icon: "🔒",
+        title: "Secure & Transparent",
         description:
-          "Dedicated implementation and ongoing support from our team.",
+          "Role-based access, complete audit history, document verification, and secure record management.",
       },
     ],
-    adminFeatureTitle: "Complete performance monitoring",
-    adminFeatureSubtitle: "Advanced admin features",
+    adminFeatureTitle: "Complete Faculty Appraisal Administration",
+
+    adminFeatureSubtitle: "Advanced Administration Dashboard",
+
     adminFeatureDescription:
-      "Manage appraisal cycles, goals, feedback, ratings, and reports from one intelligent dashboard.",
-    adminFeatureImage: "/appraisal.svg",
+      "Monitor appraisal progress, manage academic years, approval workflows, scoring rubrics, faculty submissions, department reports, and institutional analytics from a centralized dashboard.",
+    adminFeatureImage: "/appraisal2.svg",
     techStack: [
       { name: "React", logo: "/react.svg" },
       { name: "Node.js", logo: "/node.svg" },
@@ -258,64 +265,70 @@ export const products = [
     ],
     ctaTitle: "Ready to elevate performance? Let's talk.",
     ctaPoints: [
-      "Customization options",
-      "Complete workflow (Web + Mobile)",
-      "Live guidance",
+      "Fully Customizable Appraisal Workflow",
+      "Web & Mobile Access",
+      "Implementation, Training & Ongoing Support",
     ],
-    images: ["/appraisal.svg", "/appraisal1.svg", "/appraisal2.svg"],
+    images: [
+      "/appraisal.svg",
+      "/appraisal1.svg",
+      "/appraisal2.svg",
+      "/appraisal3.svg",
+      "/appraisal4.svg",
+    ],
   },
   {
     title: "Finzora",
     slug: "finzora",
     description:
       "Streamline financial operations with budgeting, expense tracking, reporting, approvals, and real-time financial insights.",
-    image: "/finance.svg",
+    image: "/fin1.jpeg",
     link: "#",
     logo: "/financew.svg",
     logob: "/financeb.svg",
     tagline: "Financial Clarity for Smarter Business Decisions",
     heroDescription:
-      "Finzora gives finance teams complete control over budgets, expenses, and approvals while delivering real-time insights that drive confident decision-making across the organization.",
-    spotlightTitle: "Real-time financial reporting & budget controls",
+      "Finzora is an intelligent finance management platform that simplifies budgeting, expense tracking, approvals, reimbursements, and financial reporting. Gain complete visibility into organizational spending with real-time dashboards, automated workflows, and actionable insights that empower faster and more informed financial decisions..",
+    spotlightTitle: "Smart Budgeting, Expense Management & Financial Insights",
     spotlightDescription:
-      "Finzora's live dashboards and automated approval chains eliminate financial blind spots and reduce month-end closing time dramatically.",
+      "Monitor budgets, track expenses, automate approval workflows, and generate detailed financial reports from a single platform. Finzora helps finance teams improve operational efficiency, maintain compliance, and achieve complete financial transparency.",
     spotlightPoints: [
-      "Real-time budget vs. actuals dashboards",
-      "Multi-level expense approval workflows",
-      "Automated financial reports and audit trails",
+      "Real-time budget allocation and expense monitoring",
+      "Automated multi-level approval and reimbursement workflows",
+      "Comprehensive financial reports with audit-ready transaction history",
     ],
-    spotlightImage: "/finance.svg",
+    spotlightImage: "/fin1.jpeg",
     highlights: [
       {
         icon: "💰",
-        title: "Cost-effective",
+        title: "Budget Management",
         description:
-          "Replace expensive legacy finance tools with one modern, integrated platform.",
+          "Create department-wise budgets, monitor spending in real time, and prevent budget overruns with intelligent financial controls.",
       },
       {
-        icon: "🌐",
-        title: "Cross-platform",
+        icon: "📄",
+        title: "Expense & Reimbursements",
         description:
-          "Submit expenses and approve budgets from web or mobile on the go.",
+          "Digitize expense submissions, automate reimbursements, and streamline approval processes to reduce manual effort.",
       },
       {
         icon: "📊",
-        title: "Fully customizable",
+        title: "Financial Analytics",
         description:
-          "Tailor approval chains, budget categories, and report templates to your business.",
+          "Generate interactive dashboards and detailed reports to analyze cash flow, expenses, and organizational financial performance.",
       },
       {
         icon: "🛡️",
-        title: "Reliable support",
+        title: "Secure & Compliant",
         description:
-          "Dedicated support to ensure your finance operations never skip a beat.",
+          "Maintain complete audit trails, role-based access, and secure financial records while ensuring compliance with organizational policies.",
       },
     ],
     adminFeatureTitle: "Complete financial monitoring",
     adminFeatureSubtitle: "Advanced admin features",
     adminFeatureDescription:
-      "Manage budgets, expenses, approvals, vendors, and financial reports from one central dashboard.",
-    adminFeatureImage: "/finance.svg",
+      "Empower finance administrators with a centralized dashboard to manage budgets, expenses, reimbursements, approval workflows, financial transactions, vendors, and reports. Monitor organizational spending in real time, enforce financial policies, and access comprehensive analytics for smarter financial governance.",
+    adminFeatureImage: "/fin2.jpeg",
     techStack: [
       { name: "React", logo: "/react.svg" },
       { name: "Node.js", logo: "/node.svg" },
@@ -328,80 +341,86 @@ export const products = [
       "Complete workflow (Web + Mobile)",
       "Live guidance",
     ],
-    images: ["/finance.svg", "/finance1.svg"],
+    images: ["/fin1.jpeg", "/fin2.jpeg", "/fin3.jpeg", "/fin4.jpeg"],
   },
   {
     title: "Eduvanta",
     slug: "eduvanta",
     description:
-      "Deliver engaging learning experiences through course management, assessments, progress tracking, and collaborative tools.",
-    image: "/lms.svg",
+      "A comprehensive Learning Management System that simplifies academic administration by managing classes, batches, faculty, students, virtual classrooms, and learning resources from a single platform.",
+    image: "/eduvanta1.svg",
     link: "#",
     logo: "/lmsw.svg",
     logob: "/lmsb.svg",
-    tagline: "Learning Management Built for Engagement and Outcomes",
+    tagline: "Simplifying Learning Management with One Powerful Platform",
     heroDescription:
-      "Eduvanta empowers educators and learners alike with a feature-rich LMS — from course creation and live sessions to assessments, progress tracking, and certificates, all on one platform.",
-    spotlightTitle: "AI-enhanced learning path personalization",
+      "The Learning Management System (LMS) empowers educational institutions with a centralized platform to efficiently manage classes, student batches, faculty, virtual classrooms, and digital learning resources, ensuring seamless academic operations.",
+    spotlightTitle: "Centralized academic management made easy",
     spotlightDescription:
-      "Eduvanta adapts content delivery based on learner progress and performance, ensuring every student gets the right material at the right time.",
+      "From creating classes to allocating virtual classrooms and managing students, the LMS provides administrators with complete control over day-to-day academic activities through an intuitive dashboard.",
     spotlightPoints: [
-      "Create rich courses with video, quizzes, and resources",
-      "Personalized learning paths based on performance",
-      "Real-time progress dashboards for educators",
+      "Create and manage classes and academic batches",
+      "Manage faculty and student records efficiently",
+      "Allocate virtual classrooms with ease",
+      "Upload and organize learning resources",
     ],
-    spotlightImage: "/lms.svg",
+    spotlightImage: "/eduvanta2.svg",
     highlights: [
       {
         icon: "📚",
-        title: "Content-rich",
+        title: "Academic Management",
         description:
-          "Support video, PDF, quizzes, live sessions, and SCORM content in one platform.",
+          "Easily create classes, organize batches, and manage the entire academic structure from a centralized dashboard.",
       },
       {
-        icon: "🌐",
-        title: "Cross-platform",
+        icon: "👨‍🏫",
+        title: "Faculty & Student Management",
         description:
-          "Learners access courses from web, iOS, or Android with offline support.",
+          "Maintain faculty profiles, student records, enrollments, and assignments with streamlined workflows.",
       },
       {
-        icon: "🎨",
-        title: "Fully customizable",
+        icon: "💻",
+        title: "Virtual Classroom Allocation",
         description:
-          "White-label the platform with your branding, custom domains, and workflows.",
+          "Assign virtual classrooms to faculty and student batches for smooth online learning experiences.",
       },
       {
-        icon: "🛡️",
-        title: "Reliable support",
+        icon: "📂",
+        title: "Resource Management",
         description:
-          "Implementation support and 24/7 technical assistance for your institution.",
+          "Upload, organize, and share learning materials, notes, presentations, and documents with students.",
       },
     ],
-    adminFeatureTitle: "Complete learning monitoring",
-    adminFeatureSubtitle: "Advanced admin features",
+    adminFeatureTitle: "Complete Learning Administration",
+    adminFeatureSubtitle: "Powerful Admin Dashboard",
     adminFeatureDescription:
-      "Manage courses, learners, assessments, certifications, and analytics from one intelligent dashboard.",
-    adminFeatureImage: "/lms.svg",
+      "The admin panel offers complete control over academic operations, including class creation, batch management, faculty assignments, student management, virtual classroom allocation, and digital resource management through a user-friendly interface.",
+    adminFeatureImage: "/eduvanta3.svg",
     techStack: [
       { name: "React", logo: "/react.svg" },
       { name: "Node.js", logo: "/node.svg" },
-      { name: "Next.js", logo: "/next.svg" },
-      { name: "AWS", logo: "/aws.svg" },
+      { name: "Express.js", logo: "/express.png" },
+      { name: "MongoDB", logo: "/mongodb.svg" },
     ],
-    ctaTitle: "Ready to transform learning? Let's talk.",
+    ctaTitle: "Transform the way your institution manages learning.",
     ctaPoints: [
-      "Customization options",
-      "Complete workflow (Web + Mobile)",
-      "Live guidance",
+      "Centralized academic management",
+      "Scalable and customizable platform",
+      "Secure and intuitive user experience",
     ],
-    images: ["/lms.svg", "/lm2.svg", "/lms1.svg"],
+    images: [
+      "/eduvanta1.svg",
+      "/eduvanta2.svg",
+      "/eduvanta3.svg",
+      "/eduvanta4.svg",
+    ],
   },
   {
     title: "Carvion",
     slug: "carvion",
     description:
       "Connect employers and job seekers through streamlined recruitment, application tracking, candidate management, and hiring tools.",
-    image: "/job.svg",
+    image: "/job1.svg",
     link: "#",
     logo: "/jobw.svg",
     logob: "/jobb.svg",
@@ -416,7 +435,7 @@ export const products = [
       "AI-ranked candidate shortlists based on JD fit",
       "Structured interview workflows and offer management",
     ],
-    spotlightImage: "/job.svg",
+    spotlightImage: "/job1.svg",
     highlights: [
       {
         icon: "⚡",
@@ -447,7 +466,7 @@ export const products = [
     adminFeatureSubtitle: "Advanced admin features",
     adminFeatureDescription:
       "Manage job postings, applicants, interview stages, offers, and hiring analytics from one dashboard.",
-    adminFeatureImage: "/job.svg",
+    adminFeatureImage: "/job2.svg",
     techStack: [
       { name: "React", logo: "/react.svg" },
       { name: "Node.js", logo: "/node.svg" },
@@ -459,14 +478,22 @@ export const products = [
       "Complete workflow (Web + Mobile)",
       "Live guidance",
     ],
-    images: ["/job.svg", "/job1.svg", "/job3.svg"],
+    images: [
+      "/job1.svg",
+      "/job2.svg",
+      "/job3.svg",
+      "/job4.svg",
+      "/job5.svg",
+      "/job6.svg",
+      "/job7.svg",
+    ],
   },
   {
     title: "Dormvanta",
     slug: "dormvanta",
     description:
       "Manage hostel operations efficiently with room allocation, occupancy tracking, fee management, and resident records.",
-    image: "/hms.svg",
+    image: "/dor1.svg",
     link: "http://51.21.128.205/",
     logo: "/hostelw.svg",
     logob: "/hostelb.svg",
@@ -481,7 +508,7 @@ export const products = [
       "Real-time occupancy dashboards per block and floor",
       "Integrated fee collection with automated reminders",
     ],
-    spotlightImage: "/hms.svg",
+    spotlightImage: "/dor2.svg",
     highlights: [
       {
         icon: "🏠",
@@ -512,11 +539,11 @@ export const products = [
     adminFeatureSubtitle: "Advanced admin features",
     adminFeatureDescription:
       "Manage rooms, residents, fees, mess, maintenance requests, and reports from one powerful dashboard.",
-    adminFeatureImage: "/hms.svg",
+    adminFeatureImage: "/dor3.svg",
     techStack: [
       { name: "React", logo: "/react.svg" },
       { name: "Node.js", logo: "/node.svg" },
-      { name: "AWS", logo: "/aws.svg" },
+      { name: "Typescript", logo: "/typescript.svg" },
     ],
     ctaTitle: "Ready to modernize hostel management? Let's talk.",
     ctaPoints: [
@@ -524,14 +551,14 @@ export const products = [
       "Complete workflow (Web + Mobile)",
       "Live guidance",
     ],
-    images: ["/hms.svg", "/hostel.svg"],
+    images: ["/dor1.svg", "/dor2.svg", "/dor3.svg", "/dor4.svg"],
   },
   {
     title: "Stayvoro",
     slug: "stayvoro",
     description:
       "Simplify resort reservations with online bookings, availability management, guest services, and payment tracking.",
-    image: "/resort.svg",
+    image: "/resort1.svg",
     link: "http://13.61.190.166/",
     logo: "/resortw.svg",
     logob: "/resortb.svg",
@@ -546,7 +573,7 @@ export const products = [
       "Automated confirmation emails and reminders",
       "Integrated payment gateway and invoice generation",
     ],
-    spotlightImage: "/resort.svg",
+    spotlightImage: "/resort2.svg",
     highlights: [
       {
         icon: "🏖️",
@@ -577,12 +604,11 @@ export const products = [
     adminFeatureSubtitle: "Advanced admin features",
     adminFeatureDescription:
       "Manage bookings, rooms, housekeeping, guests, payments, and reports from one dashboard.",
-    adminFeatureImage: "/resort.svg",
+    adminFeatureImage: "/resort3.svg",
     techStack: [
       { name: "React", logo: "/react.svg" },
       { name: "Node.js", logo: "/node.svg" },
-      { name: "AWS", logo: "/aws.svg" },
-      { name: "Figma", logo: "/figma.svg" },
+      { name: "Typescript", logo: "/typescript.svg" },
     ],
     ctaTitle: "Ready to wow your guests? Let's talk.",
     ctaPoints: [
@@ -590,7 +616,7 @@ export const products = [
       "Complete workflow (Web + Mobile)",
       "Live guidance",
     ],
-    images: ["/resort.svg", "/resort1.svg"],
+    images: ["/resort1.svg", "/resort2.svg", "/resort3.svg"],
   },
   {
     title: "Visitors System",
@@ -655,7 +681,7 @@ export const products = [
       "Complete workflow (Web + Mobile)",
       "Live guidance",
     ],
-    images: ["/1.png","/2.png","/3.png"],
+    images: ["/1.png", "/2.png", "/3.png"],
   },
   {
     title: "Quantum Quick Cart",
@@ -677,7 +703,7 @@ export const products = [
       "Real-time inventory sync across web and mobile",
       "Automated order confirmation and shipping updates",
     ],
-    spotlightImage: "/cart.png",
+    spotlightImage: "/cart1.svg",
     highlights: [
       {
         icon: "🛒",
@@ -708,12 +734,11 @@ export const products = [
     adminFeatureSubtitle: "Advanced admin features",
     adminFeatureDescription:
       "Manage products, inventory, orders, customers, payments, and analytics from one powerful dashboard.",
-    adminFeatureImage: "/cart.png",
+    adminFeatureImage: "/cart2.svg",
     techStack: [
       { name: "React", logo: "/react.svg" },
       { name: "Node.js", logo: "/node.svg" },
-      { name: "Next.js", logo: "/next.svg" },
-      { name: "AWS", logo: "/aws.svg" },
+      { name: "Typescript", logo: "/typescript.svg" },
     ],
     ctaTitle: "Ready to launch your store? Let's talk.",
     ctaPoints: [
@@ -721,6 +746,6 @@ export const products = [
       "Complete workflow (Web + Mobile)",
       "Live guidance",
     ],
-    images: ["/cart.png"],
+    images: ["/cart.png", "/cart1.svg", "/cart2.svg"],
   },
 ];

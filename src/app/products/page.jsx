@@ -57,19 +57,7 @@ export default function ProductsPage() {
             {products.map((product) => (
               <div
                 key={product.title}
-                className="
-                  rounded-3xl
-                  border
-                  border-slate-200
-                  dark:border-slate-800
-                  bg-white
-                  dark:bg-[#0a0e1a]
-                  overflow-hidden
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:shadow-xl
-                "
+                className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0a0e1a] overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
                 <div className="bg-[#f8f8f8] dark:bg-[#111827] m-4 rounded-xl">
                   <div className="relative h-[200px] w-full">
