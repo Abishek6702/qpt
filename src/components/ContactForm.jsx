@@ -118,7 +118,7 @@ export default function ContactForm() {
                   </div>
 
                   {/* Phone */}
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 hidden">
                     <FaPhoneAlt className="text-blue-400" size={18} />
                     <p className="text-white text-sm">+91 XXXXX XXXXX</p>
                   </div>
