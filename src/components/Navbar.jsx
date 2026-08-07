@@ -5,10 +5,10 @@ import Link from "next/link";
 import { Sun, Moon, Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#products", label: "Products" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/#products", label: "Products" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -61,12 +61,12 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-8 font-medium my-2">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
-                className="flex  items-center text-xl justify-center text-gray-600 dark:text-gray-200 hover:text-[#2563eb]  "
+                className="flex items-center text-xl justify-center text-gray-600 dark:text-gray-200 hover:text-[#2563eb]"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -130,7 +130,7 @@ export default function Navbar() {
             <ul className="flex flex-col gap-6">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     className="
@@ -142,7 +142,7 @@ export default function Navbar() {
               "
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
