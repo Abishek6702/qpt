@@ -87,7 +87,7 @@ export default function ContactForm() {
               {/* Company Details */}
               <div>
                 <span className="inline-block rounded-full bg-blue-500/20 text-blue-300 px-3 py-1 text-sm font-medium">
-                  Software Development Company
+                 Address
                 </span>
 
                 <h1 className="mt-4 text-2xl font-bold text-white">
@@ -102,7 +102,7 @@ export default function ContactForm() {
                     <FaMapMarkerAlt className="mt-1 text-blue-400" size={24} />
                     <div>
                       <p className="text-white/70 text-sm">
-                        QuantumPulse Technologies Pvt. Ltd. Sri Eshwar College
+                        QuantumPulse Technologies Pvt. Ltd. <br></br> Sri Eshwar College
                         of Engineering Kondampatty, Kinathukadavu, Coimbatore -
                         641202
                       </p>
@@ -126,7 +126,7 @@ export default function ContactForm() {
                 <div className="flex items-start gap-4 mt-4 border hidden">
                   <FaMapMarkerAlt className="mt-1 text-blue-400" size={20} />
                   <div className=" w-full">
-                    <h3 className="text-white font-semibold">Headquarters</h3>
+                    <h3 className="text-white font-semibold">Main Office</h3>
                     <p className="text-white/70 text-sm">
                       QuantumPulse Technologies, 6th,7th Floor, Kochar Globe,
                       Ambedkar Nagar, SIDCO Industrial Estate, Guindy, Chennai -
@@ -141,10 +141,10 @@ export default function ContactForm() {
                   <FaMapMarkerAlt className="mt-1 text-blue-400" size={24} />
                   <div>
                     <h3 className="text-white font-semibold text-xl">
-                      Headquarters
+                    Main Office
                     </h3>
                     <p className="text-white/70 text-sm leading-relaxed">
-                      QuantumPulse Technologies Pvt. Ltd. 6th & 7th Floor,
+                      QuantumPulse Technologies Pvt. <br></br> Ltd. 6th & 7th Floor,
                       Kochar Globe, SIDCO Industrial Estate, Guindy, Chennai –
                       600032
                     </p>
