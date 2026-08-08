@@ -64,7 +64,7 @@ export const products = [
       "Leave, shift, and attendance workflows",
       "Approval and rejection management",
     ],
-    images: ["/hr1.png", "/hr2.png","/hr3.png"],
+    images: ["/hr1.png", "/hr2.png", "/hr3.png"],
   },
   {
     title: "Admyra",
@@ -747,5 +747,70 @@ export const products = [
       "Live guidance",
     ],
     images: ["/cart.png", "/cart1.svg", "/cart2.svg"],
+  },
+  {
+    title: "TransitOne",
+    slug: "transit-one",
+    description:
+      "Smart transport operations for schools and fleets with QR attendance, GPS tracking, route planning, and real-time commuter monitoring.",
+    image: "/tran1.svg",
+    link: "#",
+    logo: "/transw.svg",
+    logob: "/transb.svg",
+    tagline: "Smarter Transport Operations for Campus and Fleet Mobility",
+    heroDescription:
+      "TransitOne is a multi-tenant transport and attendance ERP built for educational institutions and corporate fleets. It unifies route planning, driver allocation, vehicle tracking, commuter attendance, and live operational visibility in one platform.",
+    spotlightTitle: "QR attendance, live tracking, and instant route visibility",
+    spotlightDescription:
+      "TransitOne gives transport teams a real-time overview of buses, passengers, and attendance status without manual follow-ups or delayed reporting.",
+    spotlightPoints: [
+      "Instant QR attendance scanning for commuter boarding verification",
+      "Live bus tracking with GPS-based route and stop visibility",
+      "Driver assignment, commuter allocation, and trip execution control",
+      "Real-time attendance updates through WebSocket synchronization",
+    ],
+    spotlightImage: "/tran2.svg",
+    highlights: [
+      {
+        icon: "📍",
+        title: "Route Management",
+        description:
+          "Plan and manage routes, stops, and assignments across institutions or fleet zones.",
+      },
+      {
+        icon: "🚌",
+        title: "Fleet Tracking",
+        description:
+          "Monitor active vehicles, driver movement, and location status in real time.",
+      },
+      {
+        icon: "✅",
+        title: "QR Attendance",
+        description:
+          "Enable instant boarding verification with secure, quick attendance recording.",
+      },
+      {
+        icon: "📊",
+        title: "Live Insights",
+        description:
+          "Track boarded, pending, and delayed commuters through actionable dashboards.",
+      },
+    ],
+    adminFeatureTitle: "Complete transport administration",
+    adminFeatureSubtitle: "Fleet and attendance control",
+    adminFeatureDescription:
+      "Manage vehicles, drivers, routes, allocations, attendance, and alerts through a single real-time admin workspace.",
+    adminFeatureImage: "/tran3.svg",
+    techStack: [
+      { name: "Ruby on Rails", logo: "/ruby.png" },
+      { name: "PostgreSQL", logo: "/post.jpg" },
+    ],
+    ctaTitle: "Ready to modernize your transport operations? Let's talk.",
+    ctaPoints: [
+      "Fleet monitoring",
+      "QR attendance",
+      "Real-time updates",
+    ],
+    images: ["/tran1.svg", "/tran2.svg", "/tran3.svg","/tran4.svg"],
   },
 ];
