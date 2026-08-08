@@ -2,6 +2,7 @@
 <rect width="1600" height="761" fill="url(#pattern0_339_450)"/>
 <rect width="262" height="77" fill="#FAFDFF"/>
 <rect x="18" y="15" width="226" height="47" fill="url(#pattern1_339_450)"/>
+<rect y="691" width="242" height="70" fill="#0162A7"/>
 <defs>
 <pattern id="pattern0_339_450" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_339_450" transform="scale(0.000625 0.00131406)"/>
