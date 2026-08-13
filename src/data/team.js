@@ -38,8 +38,20 @@ export const teamMembers = [
 
   {
     id: "member-7",
-    name: "Fayaz Ahammed M" ,
+    name: "Fayaz Ahammed M",
     role: "Software Developer",
     image: "/user7.jpeg",
+  },
+  {
+    id: "member-8",
+    name: "Mithun M",
+    role: "Inter (DEVSEC-OPS)",
+    image: "/user8.jpeg",
+  },
+  {
+    id: "member-9",
+    name: "Mohammed Rafi H",
+    role: "Inter (Software Developer)",
+    image: "/user9.jpeg",
   },
 ];
