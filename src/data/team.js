@@ -54,4 +54,10 @@ export const teamMembers = [
     role: "Intern (Software Developer)",
     image: "/user9.jpeg",
   },
+  {
+    id: "member-10",
+    name: "GUGAN S",
+    role: "Intern (Software Developer)",
+    image: "/user10.jpeg",
+  },
 ];

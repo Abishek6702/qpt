@@ -813,4 +813,70 @@ export const products = [
     ],
     images: ["/tran1.svg", "/tran2.svg", "/tran3.svg","/tran4.svg"],
   },
+  {
+    title: "QuantumRIMS",
+    slug: "quantumrims",
+    description:
+      "Research information management system for colleges — publications, incentives, seed funding, patents, and grants, unified in one portal with AI-assisted reporting.",
+    image: "/r1.jpeg",
+    link: "#",
+    logo: "/rw.svg",
+    logob: "/rb.svg",
+    tagline: "One Portal for Every Research Workflow in Your Institution",
+    heroDescription:
+      "QuantumRIMS is a full-cycle research administration platform built for engineering colleges. It replaces scattered spreadsheets and manual approvals with a single system covering paper submissions, incentive claims, seed fund applications, project grants, consultancy projects, and patent tracking — from faculty submission through admin approval to institution-wide reporting.",
+    spotlightTitle: "Real-time reporting, AI-assisted answers, zero manual tallying",
+    spotlightDescription:
+      "QuantumRIMS gives administrators a live, accurate picture of institutional research output — publications, incentives paid, grants sanctioned, and patents filed — without chasing departments for updated numbers.",
+    spotlightPoints: [
+      "Faculty self-service submission for papers, incentives, seed funds, consultancy, and project grants",
+      "Automated document generation, approval workflows, and status tracking for every application type",
+      "Consolidated analytics dashboard covering publications, patents, incentives, and grants by year and department",
+      "AI research assistant for staff and admins to query institutional data in plain language",
+    ],
+    spotlightImage: "/r2.jpeg",
+    highlights: [
+      {
+        icon: "📄",
+        title: "Publication Tracking",
+        description:
+          "Faculty submit Scopus/SCI papers with proofs; admins review, approve, and track institutional output by department and year.",
+      },
+      {
+        icon: "💰",
+        title: "Incentive Management",
+        description:
+          "Automated incentive calculation for publications, patents, and citations, linked directly to approved submissions.",
+      },
+      {
+        icon: "🔬",
+        title: "Grants & Seed Funding",
+        description:
+          "End-to-end workflow for seed fund, project grant, and consultancy applications — from proposal to fund utilization certificate.",
+      },
+      {
+        icon: "🤖",
+        title: "AI Research Assistant",
+        description:
+          "Built-in chatbots let faculty check their own submissions and let admins query institution-wide research data instantly.",
+      },
+    ],
+    adminFeatureTitle: "Complete research administration",
+    adminFeatureSubtitle: "Approvals, reports, and analytics in one workspace",
+    adminFeatureDescription:
+      "Admins review and approve every application type, manage historical data imports, generate reports, and post institutional announcements — all from a single, role-based admin portal.",
+    adminFeatureImage: "/r3.jpeg",
+    techStack: [
+      { name: "Next.js", logo: "/next.svg" },
+      { name: "Supabase", logo: "/super.jfif" },
+      { name: "Cloudinary", logo: "/cloud.png" },
+    ],
+    ctaTitle: "Ready to bring your institution's research data into one system? Let's talk.",
+    ctaPoints: [
+      "Faculty self-service portal",
+      "Automated approvals",
+      "AI-powered reporting",
+    ],
+    images: ["/r1.jpeg", "/r2.jpeg", "/r3.jpeg", "/r4.jpeg","/r5.jpeg"],
+  }
 ];
