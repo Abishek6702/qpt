@@ -878,5 +878,79 @@ export const products = [
       "AI-powered reporting",
     ],
     images: ["/r1.jpeg", "/r2.jpeg", "/r3.jpeg", "/r4.jpeg","/r5.jpeg"],
+  },
+  {
+    title: "Quantum CareOne - Enterprise Hospital Management System",
+    slug: "quantum-careone-hms",
+    description: "An enterprise-grade, full-stack Hospital Management System engineered with role-based clinical workspaces, automated OPD queue lifecycle, and AES-256 encrypted healthcare security.",
+    image: "/a1.png",
+    link: "#",
+    logo: "/ab.svg",
+    logob: "/hb.svg",
+    tagline: "One Platform. Complete Hospital Care.",
+    heroDescription: "Quantum CareOne is a production-grade hospital management platform engineered to streamline outpatient clinical workflows across Reception, Nurse Triage, Doctor Consultations, Diagnostic Laboratories, and Pharmacy. Powered by scalable MongoDB Atlas infrastructure, it delivers deterministic AES-256 data encryption, automated queue token orchestration, and a pure Material Design 3 clinical interface.",
+    spotlightTitle: "Role-Based Clinical Orchestration & End-to-End Patient Lifecycle",
+    spotlightDescription: "Unifying patient registration, vital triage, physician encounter diagnosis, departmental laboratory testing, and pharmacy dispensing into a seamless, error-free clinical continuum.",
+    spotlightPoints: [
+        "Unified OPD Queue Management with live token state progression from check-in to checkout.",
+        "HIPAA-grade Field-Level AES-256 Encryption ensuring absolute privacy for sensitive patient demographics.",
+        "Isolated Diagnostic Laboratory Workspaces preventing cross-department patient report exposure.",
+        "Adaptive Material Design 3 Clinical UI with instant Daylight and Night theme switching.",
+        "Granular Role-Based Access Control (RBAC) across 6 specialized hospital staff roles."
+    ],
+    spotlightImage: "/a2.png",
+    highlights: [
+      {
+        icon: "📄",
+        title: "Smart Patient Registration",
+        description: "Rapid demographic intake, unique MRN generation, Aadhaar deduplication, emergency contact management, and printable barcode clinical ID cards."
+     },
+      {
+        icon: "💰",
+        title: "Nurse Triage & Vitals Workspace",
+            description: "High-density vital intake recording blood pressure, SpO2, pulse, and BMI with color-coded alerts and dynamic triage queue management."
+        },
+      {
+        icon: "🔬",
+        title: "Pharmacy & Dispensing Desk",
+            description: "Live e-prescription fulfillment queue, automatic medicine pricing, dosage instruction review, and multi-line invoice billing generation."
+       },
+      {
+        icon: "🤖",
+        title: "Zero-Trust Security Core",
+            description: "Deterministic and random AES-256 cryptographic storage, JWT session lifecycle, XSS sanitization, and strict API rate limiting."
+        },
+    ],
+    adminFeatureTitle: "Centralized Governance, Role Security & Operational Telemetry",
+    adminFeatureSubtitle: "Complete Administrative Control with Multi-Department Management and Audit Compliance",
+    adminFeatureDescription: "Empowers hospital administrators to orchestrate hospital departments, manage staff credentials, enforce granular permission matrices, and monitor real-time clinical activity through tamper-evident audit logging and daily rotating server diagnostics.",
+    techStack: [
+        {
+            name: "React 19",
+            logo: "/react.svg"
+        },
+        {
+            name: "Node.js",
+            logo: "/node.svg"
+        },
+        {
+            name: "Express.js",
+            logo: "/express.png"
+        },
+        {
+            name: "MongoDB Atlas",
+            logo: "/mongodb.svg"
+        },
+       
+    ],
+    ctaTitle: "Ready to Transform Your Hospital's Clinical & Operational Workflows?",
+    ctaPoints: [
+        "Deploy a unified, production-ready hospital management platform with zero friction.",
+        "Protect sensitive patient records with military-grade AES-256 field-level encryption.",
+        "Accelerate outpatient throughput with real-time automated OPD queue orchestration.",
+        "Eliminate communication errors between doctors, nurses, laboratories, and pharmacy.",
+        "Equip healthcare professionals with an intuitive, accessible Material Design 3 interface."
+    ],
+    images: ["/a1.png", "/a2.png", "/a3.png", "/a4.png","/a5.png"],
   }
 ];
