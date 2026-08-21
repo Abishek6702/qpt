@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
-
+  allowedDevOrigins: ["quantumpulsetechnologies.com", "192.168.56.1"],
   async headers() {
     return [
       {
@@ -23,7 +23,7 @@ const nextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
           },
-          
+
         ],
       },
     ];
