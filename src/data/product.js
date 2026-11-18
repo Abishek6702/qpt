@@ -811,7 +811,7 @@ export const products = [
       "QR attendance",
       "Real-time updates",
     ],
-    images: ["/tran1.svg", "/tran2.svg", "/tran3.svg","/tran4.svg"],
+    images: ["/tran1.svg", "/tran2.svg", "/tran3.svg", "/tran4.svg"],
   },
   {
     title: "QuantumRIMS",
@@ -877,7 +877,7 @@ export const products = [
       "Automated approvals",
       "AI-powered reporting",
     ],
-    images: ["/r1.jpeg", "/r2.jpeg", "/r3.jpeg", "/r4.jpeg","/r5.jpeg"],
+    images: ["/r1.jpeg", "/r2.jpeg", "/r3.jpeg", "/r4.jpeg", "/r5.jpeg"],
   },
   {
     title: "Quantum CareOne - Enterprise Hospital Management System",
@@ -892,11 +892,11 @@ export const products = [
     spotlightTitle: "Role-Based Clinical Orchestration & End-to-End Patient Lifecycle",
     spotlightDescription: "Unifying patient registration, vital triage, physician encounter diagnosis, departmental laboratory testing, and pharmacy dispensing into a seamless, error-free clinical continuum.",
     spotlightPoints: [
-        "Unified OPD Queue Management with live token state progression from check-in to checkout.",
-        "HIPAA-grade Field-Level AES-256 Encryption ensuring absolute privacy for sensitive patient demographics.",
-        "Isolated Diagnostic Laboratory Workspaces preventing cross-department patient report exposure.",
-        "Adaptive Material Design 3 Clinical UI with instant Daylight and Night theme switching.",
-        "Granular Role-Based Access Control (RBAC) across 6 specialized hospital staff roles."
+      "Unified OPD Queue Management with live token state progression from check-in to checkout.",
+      "HIPAA-grade Field-Level AES-256 Encryption ensuring absolute privacy for sensitive patient demographics.",
+      "Isolated Diagnostic Laboratory Workspaces preventing cross-department patient report exposure.",
+      "Adaptive Material Design 3 Clinical UI with instant Daylight and Night theme switching.",
+      "Granular Role-Based Access Control (RBAC) across 6 specialized hospital staff roles."
     ],
     spotlightImage: "/a2.png",
     highlights: [
@@ -904,53 +904,265 @@ export const products = [
         icon: "📄",
         title: "Smart Patient Registration",
         description: "Rapid demographic intake, unique MRN generation, Aadhaar deduplication, emergency contact management, and printable barcode clinical ID cards."
-     },
+      },
       {
         icon: "💰",
         title: "Nurse Triage & Vitals Workspace",
-            description: "High-density vital intake recording blood pressure, SpO2, pulse, and BMI with color-coded alerts and dynamic triage queue management."
-        },
+        description: "High-density vital intake recording blood pressure, SpO2, pulse, and BMI with color-coded alerts and dynamic triage queue management."
+      },
       {
         icon: "🔬",
         title: "Pharmacy & Dispensing Desk",
-            description: "Live e-prescription fulfillment queue, automatic medicine pricing, dosage instruction review, and multi-line invoice billing generation."
-       },
+        description: "Live e-prescription fulfillment queue, automatic medicine pricing, dosage instruction review, and multi-line invoice billing generation."
+      },
       {
         icon: "🤖",
         title: "Zero-Trust Security Core",
-            description: "Deterministic and random AES-256 cryptographic storage, JWT session lifecycle, XSS sanitization, and strict API rate limiting."
-        },
+        description: "Deterministic and random AES-256 cryptographic storage, JWT session lifecycle, XSS sanitization, and strict API rate limiting."
+      },
     ],
     adminFeatureTitle: "Centralized Governance, Role Security & Operational Telemetry",
     adminFeatureSubtitle: "Complete Administrative Control with Multi-Department Management and Audit Compliance",
     adminFeatureDescription: "Empowers hospital administrators to orchestrate hospital departments, manage staff credentials, enforce granular permission matrices, and monitor real-time clinical activity through tamper-evident audit logging and daily rotating server diagnostics.",
     techStack: [
-        {
-            name: "React 19",
-            logo: "/react.svg"
-        },
-        {
-            name: "Node.js",
-            logo: "/node.svg"
-        },
-        {
-            name: "Express.js",
-            logo: "/express.png"
-        },
-        {
-            name: "MongoDB Atlas",
-            logo: "/mongodb.svg"
-        },
-       
+      {
+        name: "React 19",
+        logo: "/react.svg"
+      },
+      {
+        name: "Node.js",
+        logo: "/node.svg"
+      },
+      {
+        name: "Express.js",
+        logo: "/express.png"
+      },
+      {
+        name: "MongoDB Atlas",
+        logo: "/mongodb.svg"
+      },
+
     ],
     ctaTitle: "Ready to Transform Your Hospital's Clinical & Operational Workflows?",
     ctaPoints: [
-        "Deploy a unified, production-ready hospital management platform with zero friction.",
-        "Protect sensitive patient records with military-grade AES-256 field-level encryption.",
-        "Accelerate outpatient throughput with real-time automated OPD queue orchestration.",
-        "Eliminate communication errors between doctors, nurses, laboratories, and pharmacy.",
-        "Equip healthcare professionals with an intuitive, accessible Material Design 3 interface."
+      "Deploy a unified, production-ready hospital management platform with zero friction.",
+      "Protect sensitive patient records with military-grade AES-256 field-level encryption.",
+      "Accelerate outpatient throughput with real-time automated OPD queue orchestration.",
+      "Eliminate communication errors between doctors, nurses, laboratories, and pharmacy.",
+      "Equip healthcare professionals with an intuitive, accessible Material Design 3 interface."
     ],
-    images: ["/a1.png", "/a2.png", "/a3.png", "/a4.png","/a5.png"],
+    images: ["/a1.png", "/a2.png", "/a3.png", "/a4.png", "/a5.png"],
+  },
+  {
+    title: "Bus Booking Platform",
+    slug: "bus-ticket-booking",
+    description:
+      "Simplify bus travel with online ticket booking, travel agent management, dynamic seat selection, route scheduling, and secure payment integration.",
+    image: "/bus4.png",
+    link: "#",
+    logo: "/bus.svg",
+    logob: "/busb.svg",
+    tagline: "Seamless Bus Booking for Smarter Travel Management",
+    heroDescription:
+      "The Bus Ticket Booking Platform provides a centralized solution for managing bus reservations and travel operations. It connects passengers, travel agents, and administrators through a role-based system that simplifies bus listings, route management, seat selection, booking operations, and online payments. The platform streamlines the complete booking journey while providing administrators with centralized control over travel operations.",
+
+    spotlightTitle: "Complete bus booking & travel management",
+    spotlightDescription:
+      "The platform connects passengers, travel agents, and administrators through an integrated booking ecosystem. From managing buses and routes to selecting seats and completing payments, it simplifies the entire travel reservation process.",
+    spotlightPoints: [
+      "Role-based access for administrators, travel agents, and passengers",
+      "Bus listing, route, schedule, and fare management",
+      "Interactive seat selection and ticket booking",
+      "Secure online payment integration and booking management",
+    ],
+    spotlightImage: "/bus1.png",
+
+    highlights: [
+      {
+        icon: "🚌",
+        title: "Bus Management",
+        description:
+          "Allow approved travel agents to add and manage buses, configure seat layouts, update bus details, and manage their available travel services.",
+      },
+      {
+        icon: "🎫",
+        title: "Online Ticket Booking",
+        description:
+          "Enable passengers to explore available buses, select preferred seats, choose boarding points, and book tickets through a streamlined booking experience.",
+      },
+      {
+        icon: "📍",
+        title: "Route & Schedule Management",
+        description:
+          "Manage travel routes, departure dates, boarding points, dropping locations, intermediate stops, and journey schedules.",
+      },
+      {
+        icon: "💳",
+        title: "Payment Integration",
+        description:
+          "Integrate online payment workflows supporting UPI, QR-based payments, and cards to provide a convenient ticket booking experience.",
+      },
+    ],
+
+    adminFeatureTitle: "Complete travel administration",
+    adminFeatureSubtitle: "Advanced booking management features",
+    adminFeatureDescription:
+      "Manage users, travel agents, bus approvals, bus listings, routes, bookings, and commission configurations through a centralized administrative dashboard. Review agent registrations, approve travel services, and maintain control over platform operations.",
+    adminFeatureImage: "/bus2.png",
+
+    techStack: [
+      { name: "React.js", logo: "/react.svg" },
+      { name: "Node.js", logo: "/node.svg" },
+      { name: "Express.js", logo: "/express.png" },
+      { name: "MongoDB", logo: "/mongodb.svg" },
+      // { name: "React Native", logo: "/react-native.svg" },
+      // { name: "PayU", logo: "/payu.svg" },
+    ],
+
+    ctaTitle: "Ready to simplify bus travel management? Let's talk.",
+    ctaPoints: [
+      "Complete bus and travel agent management",
+      "Dynamic seat selection and online ticket booking",
+      "Route scheduling and secure payment workflows",
+    ],
+
+    images: ["/bus1.png", "/bus2.png", "/bus3.jpeg", "/bus4.png"],
+  },
+  {
+    title: "Any2Pdf",
+    slug: "any2pdf",
+    description:
+      "Document conversion platform with built-in AI Copilot to convert, compress, merge, summarize, and query PDF documents securely.",
+    image: "/pdf1.jpeg",
+    link: "https://srieshwaranytopdf.com/",
+    logo: "/any2pdf-logo-w.svg",
+    logob: "/any2pdf-logo-b.svg",
+    tagline: "Document Conversion & AI-Powered Document Assistant",
+    heroDescription:
+      "Any2Pdf combines document conversion tools with an integrated AI Copilot. Convert Word, presentations, and spreadsheets to PDF, compress file sizes, and use the AI Copilot to summarize content, extract key data, and ask questions directly about your documents.",
+    spotlightTitle: "Document conversion and interactive document assistance",
+    spotlightDescription:
+      "Convert common office formats to PDF in seconds, and use the built-in AI Copilot to interact with your files, extract summaries, and find answers without reading through long pages.",
+    spotlightPoints: [
+      "Convert Word, Excel, PowerPoint, and images directly to PDF",
+      "Built-in AI Copilot to summarize long documents and answer queries instantly",
+      "Reduce PDF file sizes for email and portal submissions without quality loss",
+      "Merge multiple documents into a single organized PDF file",
+    ],
+    spotlightImage: "/pdf1.jpeg",
+    highlights: [
+      {
+        icon: "🤖",
+        title: "AI Document Copilot",
+        description:
+          "Ask questions about your uploaded documents, generate concise summaries, and extract key action items directly from text.",
+      },
+      {
+        icon: "📄",
+        title: "Format Conversion",
+        description:
+          "Convert DOCX, PPTX, XLSX, and image files to clean, properly formatted PDF files.",
+      },
+      {
+        icon: "🗜️",
+        title: "PDF Compression",
+        description:
+          "Compress heavy PDF documents to smaller file sizes while maintaining clear text and image quality.",
+      },
+      {
+        icon: "📑",
+        title: "Merge & Organize",
+        description:
+          "Combine multiple individual PDFs or pages into one continuous document ready for submission.",
+      },
+    ],
+    adminFeatureTitle: "Document Processing Infrastructure",
+    adminFeatureSubtitle: "Reliable background processing & AI pipelines",
+    adminFeatureDescription:
+      "Built with dedicated background conversion workers, object storage, and secure AI parsing pipelines for fast document handling under load.",
+    adminFeatureImage: "/pdf2.jpeg",
+    techStack: [
+      { name: "Next.js", logo: "/next.svg" },
+      { name: "Node.js", logo: "/node.svg" },
+      { name: "PostgreSQL", logo: "/postgress.svg" },
+      // { name: "MinIO", logo: "/minio.svg" },
+      { name: "Docker", logo: "/docker.png" },
+    ],
+    ctaTitle: "Convert, manage, and understand documents faster with Any2Pdf.",
+    ctaPoints: [
+      "Drag-and-drop conversion and compression",
+      "AI Copilot for instant document analysis",
+      "Secure processing with automated data cleanup",
+    ],
+    images: ["/pdf1.jpeg", "/pdf2.jpeg", "/pdf3.jpeg", "/pdf4.jpeg"],
+  },
+  {
+    title: "Sri Eshwar Gatepass",
+    slug: "sri-eshwar-gatepass",
+    description:
+      "Campus entry and access management system for visitor passes, student outpass approvals, ID barcode scanning, and security gate monitoring.",
+    image: "/gate1.jpeg",
+    link: "https://secegatepass.share.zrok.io",
+    logo: "/gatepass-logo-w.svg",
+    logob: "/gatepass-logo-b.svg",
+    tagline: "Access Control & Security Gate Operations",
+    heroDescription:
+      "Sri Eshwar Gatepass manages and automates institution gate operations. It provides visitor registration, faculty approval workflows, student outpass verification, and barcode scanning for security guards, replacing physical logbooks with verified electronic entry logs.",
+    spotlightTitle: "Centralized gate operations and movement records",
+    spotlightDescription:
+      "Connects security personnel, faculty, and administrative staff to process visitor approvals, verify student departures, and maintain accurate daily logs of everyone entering and leaving the campus.",
+    spotlightPoints: [
+      "Visitor pre-registration with automated host approval workflows",
+      "Student outpass requests with faculty approval and guard verification",
+      "Direct barcode and ID card scanning at security checkpoints",
+      "Real-time monitoring of students and staff currently outside campus",
+    ],
+    spotlightImage: "/gate2.jpeg",
+    highlights: [
+      {
+        icon: "🪪",
+        title: "ID & Barcode Scanning",
+        description:
+          "Scan student and staff ID barcodes at the gate to log entry, exit, and return times in under two seconds.",
+      },
+      {
+        icon: "📋",
+        title: "Visitor Management",
+        description:
+          "Enable visitor self-registration with direct host notifications and digital QR gate pass generation.",
+      },
+      {
+        icon: "🚪",
+        title: "Student Outpass System",
+        description:
+          "Process day outpasses and home leave requests with verified faculty approval and guard desk checkouts.",
+      },
+      {
+        icon: "📊",
+        title: "Gate Movement Audits",
+        description:
+          "Monitor real-time student presence, return durations, visitor volumes, and peak traffic hours from an administrative portal.",
+      },
+    ],
+    adminFeatureTitle: "Campus Security Administration",
+    adminFeatureSubtitle: "Administrative tools for security teams",
+    adminFeatureDescription:
+      "Manage campus gates, guard station accounts, department directories, student leave policies, and comprehensive movement logs from a unified adminportal.",
+    adminFeatureImage: "/gate3.jpeg",
+    techStack: [
+      { name: "Next.js", logo: "/next.svg" },
+      { name: "TypeScript", logo: "/typescript.svg" },
+      // { name: "Tailwind CSS", logo: "/tailwind.svg" },
+      // { name: "Prisma", logo: "/prisma.svg" },
+      { name: "PostgreSQL", logo: "/postgress.svg" },
+      { name: "Docker", logo: "/docker.png" },
+    ],
+    ctaTitle: "Streamline your campus security and gate operations.",
+    ctaPoints: [
+      "Digital visitor approvals and passes",
+      "Fast barcode scanning at guard desks",
+      "Real-time student and staff movement records",
+    ],
+    images: ["/gate1.jpeg", "/gate2.jpeg", "/gate3.jpeg", "/gate4.jpeg"],
   }
 ];
